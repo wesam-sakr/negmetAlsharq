@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Group_67721" data-name="Group 67721" transform="translate(-310 -51)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(310 51)" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="30" cy="30" r="30" stroke="none"/>
+      <circle cx="30" cy="30" r="29.5" fill="none"/>
+    </g>
+    <g id="svgexport-6_-_2022-03-31T140345.146" data-name="svgexport-6 - 2022-03-31T140345.146" transform="translate(327.82 66.972)">
+      <g id="_09" data-name="09" transform="translate(2.356 -0.017)">
+        <path id="Path_1146" data-name="Path 1146" d="M8.754,17.508a1.754,1.754,0,1,1,1.754-1.754A1.754,1.754,0,0,1,8.754,17.508Z" transform="translate(1.144 10.583)" fill="#fff"/>
+        <path id="Path_1147" data-name="Path 1147" d="M17.761,22.812H6.747a4.384,4.384,0,0,1-4.332-5.1L4.169,6.8a8.12,8.12,0,0,1,16.03,0l1.754,10.909a4.437,4.437,0,0,1-.982,3.508A4.384,4.384,0,0,1,17.761,22.812ZM12.254,1.767A6.349,6.349,0,0,0,5.976,7.028L4.222,17.937a2.631,2.631,0,0,0,.6,2.14,2.578,2.578,0,0,0,1.929.982H17.761a2.578,2.578,0,0,0,2-.93,2.631,2.631,0,0,0,.6-2.14L18.533,7.028a6.349,6.349,0,0,0-6.279-5.261Z" transform="translate(-2.356 0.017)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

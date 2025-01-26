@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="276" height="123" viewBox="0 0 276 123">
+  <defs>
+    <filter id="Rectangle_359" x="0" y="0" width="276" height="123" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#d9d9d9" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2248" data-name="Group 2248" transform="translate(-569.188 -1423.31)">
+    <g transform="matrix(1, 0, 0, 1, 569.19, 1423.31)" filter="url(#Rectangle_359)">
+      <rect id="Rectangle_359-2" data-name="Rectangle 359" width="258" height="105" rx="14" transform="translate(9 9)" fill="#019572" opacity="0.8"/>
+    </g>
+    <g id="Group_2246" data-name="Group 2246" transform="translate(668.78 1445.093)">
+      <text id="_400_" data-name="400+" transform="translate(72.407 35.217)" fill="#fff" font-size="33" font-family="Tajawal-Bold, Tajawal" font-weight="700"><tspan x="-72" y="0">400+</tspan></text>
+      <text id="بيع_شقه" data-name="بيع شقه" transform="translate(80.407 71.217)" fill="#fff" font-size="22" font-family="Tajawal-Medium, Tajawal" font-weight="500"><tspan x="-80" y="0">بيع شقه</tspan></text>
+    </g>
+  </g>
+</svg>
