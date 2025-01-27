@@ -3114,7 +3114,7 @@ html[lang='en'] .form-addbuilder .title-input::before {
     padding-inline: 1rem;
   }
 
-  .blog-grid.blogs .card {
+  .blogs .blog-grid .card {
     grid-column: span 12;
   }
 
