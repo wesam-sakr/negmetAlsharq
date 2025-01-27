@@ -42,10 +42,7 @@
           <div
             class="helper-links w-100 d-flex align-items-center justify-content-between py-2"
           >
-            <ul
-              class="helper-pages m-0 d-flex align-items-center"
-              style="gap: 15px"
-            >
+            <ul class="helper-pages m-0 d-flex align-items-center">
               <li class="d-md-block d-none">
                 <a href="help.html" aria-label="الذهاب إلى الأسئلة الشائعة">
                   <span>الأسئلة الشائعة</span>
@@ -63,10 +60,7 @@
                 </a>
               </li>
             </ul>
-            <ul
-              class="helper-pages m-0 d-flex align-items-center"
-              style="gap: 15px"
-            >
+            <ul class="helper-pages m-0 d-flex align-items-center">
               <li>
                 <a href="register.html" aria-label="إنشاء حساب جديد">
                   <i class="bi bi-box-arrow-in-left"></i>
@@ -100,10 +94,10 @@
             id="navbarSupportedContent"
           >
             <!-- روابط القائمة -->
-            <ul class="navbar-nav gap-4 mb-0">
+            <ul class="navbar-nav gap-md-4 mb-0">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   href="index.html"
                   aria-label="الذهاب إلى الصفحة الرئيسية"
                   >الرئيسية</a
@@ -127,7 +121,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link active"
                   href="estates.html"
                   aria-label="الذهاب إلى صفحة العقارات"
                   >العقارات</a
@@ -173,24 +167,24 @@
       </nav>
     </header>
 
-    <!------------- breadcrumb -------------->
+    <!-- breadcrumb -->
     <section class="">
       <div class="container-fluid">
         <div class="d-flex py-4 align-items-center breadcrumb border-bottom">
           <a href="index.html" class="fw-semibold fs-5"> الرئيسية</a>
-          <span class="mx-2"><i class="fa-solid fa-angles-left"></i></span>
+          <i class="fa-solid fa-angles-left mx-2 text-muted"></i>
           <h2 class="fw-semibold secondry fs-5 mb-0">العقارات</h2>
         </div>
       </div>
     </section>
 
-    <!------------- section -------------->
-    <section class="my-5 pb-5">
-      <div class="container">
+    <!-- section -->
+    <section class="estates my-5 pb-5">
+      <div class="container-fluid">
         <div class="row gx-lg-5">
-          <div class="col-5 col-lg-3 filter  px-3">
-            <div class="filter-header d-md-none">
-              <h6 class="mb-0">التصفيه</h6>
+          <div class="col-5 col-lg-3 filter px-3">
+            <div class="filter-header d-flex justify-content-between d-md-none">
+              <p class="m-0 fw-bold fs-5">التصفيه</p>
               <button
                 type="button"
                 class="btn-close"
@@ -209,7 +203,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                   <button
-                    class="accordion-button"
+                    class="accordion-button px-1"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseOne"
@@ -225,7 +219,7 @@
                   aria-labelledby="flush-headingOne"
                   data-bs-parent="#accordionFlushExample"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body px-1">
                     <ul>
                       <li>
                         <div class="form-check">
@@ -287,7 +281,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingTwo">
                   <button
-                    class="accordion-button collapsed"
+                    class="accordion-button px-1 collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseTwo"
@@ -303,7 +297,7 @@
                   aria-labelledby="flush-headingTwo"
                   data-bs-parent="#accordionFlushExample"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body px-1">
                     <ul>
                       <li>
                         <div class="form-check">
@@ -352,7 +346,7 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
                   <button
-                    class="accordion-button collapsed"
+                    class="accordion-button px-1 collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#flush-collapseThree"
@@ -368,7 +362,7 @@
                   aria-labelledby="flush-headingThree"
                   data-bs-parent="#accordionFlushExample"
                 >
-                  <div class="accordion-body">
+                  <div class="accordion-body px-1">
                     <ul>
                       <li>
                         <div class="form-check">
@@ -411,208 +405,281 @@
           </div>
           <div class="col filter-data">
             <div class="our-estates">
-              <div class="card">
-                <!-- estate link -->
-                <a
-                  href="estate-details.html"
-                  aria-label="مشاهدة تفاصيل عقار اسم العقار"
-                  class="link"
-                ></a>
-                <!-- fav -->
-                <button class="fav fav-icon">
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-                <!-- estate img -->
-                <div class="estate-img">
-                  <img
-                    src="images/build.png"
-                    class="card-img-top"
-                    alt="estate name"
-                  />
-                </div>
-                <!-- estate info -->
-                <div class="card-body">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <p class="estate-price secondry fw-bold">
-                      1500 <span>ريال سعودي</span>
-                    </p>
+              <div class="row gy-3 row-cols-md-2 row-cols-1">
+                <div class="col">
+                  <div class="card">
+                    <!-- estate link -->
                     <a
                       href="estate-details.html"
                       aria-label="مشاهدة تفاصيل عقار اسم العقار"
-                      class="goto"
-                    >
-                      <i class="bi bi-arrow-up-left"></i>
-                    </a>
+                      class="link"
+                    ></a>
+                    <!-- fav -->
+                    <button class="fav fav-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <!-- estate img -->
+                    <div class="estate-img">
+                      <img
+                        src="images/build.png"
+                        class="card-img-top"
+                        alt="estate name"
+                      />
+                    </div>
+                    <!-- estate info -->
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="estate-price secondry fw-bold">
+                          1500 <span>ريال سعودي</span>
+                        </p>
+                        <a
+                          href="estate-details.html"
+                          aria-label="مشاهدة تفاصيل عقار اسم العقار"
+                          class="goto"
+                        >
+                          <i class="bi bi-arrow-up-left"></i>
+                        </a>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="estate-name card-title fw-semibold">
+                          برج المملكة – الرياض
+                        </p>
+                        <small class="estate-type text-muted"
+                          >شقة للإيجار</small
+                        >
+                      </div>
+                      <p class="estate-location card-text main">
+                        <i class="bi bi-geo-alt"></i>
+                        <small
+                          >الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small
+                        >
+                      </p>
+                    </div>
                   </div>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <p class="estate-name card-title fw-semibold">
-                      برج المملكة – الرياض
-                    </p>
-                    <small class="estate-type text-muted">شقة للإيجار</small>
-                  </div>
-                  <p class="estate-location card-text main">
-                    <i class="bi bi-geo-alt"></i>
-                    <small
-                      >الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small
-                    >
-                  </p>
                 </div>
-              </div>
-              <div class="card">
-                <!-- estate link -->
-                <a
-                  href="estate-details.html"
-                  aria-label="مشاهدة تفاصيل عقار اسم العقار"
-                  class="link"
-                ></a>
-                <!-- fav -->
-                <button class="fav fav-icon">
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-                <!-- estate img -->
-                <div class="estate-img">
-                  <img
-                    src="images/build.png"
-                    class="card-img-top"
-                    alt="estate name"
-                  />
-                </div>
-                <!-- estate info -->
-                <div class="card-body">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <p class="estate-price secondry fw-bold">
-                      1500 <span>ريال سعودي</span>
-                    </p>
+                <div class="col">
+                  <div class="card">
+                    <!-- estate link -->
                     <a
                       href="estate-details.html"
                       aria-label="مشاهدة تفاصيل عقار اسم العقار"
-                      class="goto"
-                    >
-                      <i class="bi bi-arrow-up-left"></i>
-                    </a>
+                      class="link"
+                    ></a>
+                    <!-- fav -->
+                    <button class="fav fav-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <!-- estate img -->
+                    <div class="estate-img">
+                      <img
+                        src="images/build.png"
+                        class="card-img-top"
+                        alt="estate name"
+                      />
+                    </div>
+                    <!-- estate info -->
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="estate-price secondry fw-bold">
+                          1500 <span>ريال سعودي</span>
+                        </p>
+                        <a
+                          href="estate-details.html"
+                          aria-label="مشاهدة تفاصيل عقار اسم العقار"
+                          class="goto"
+                        >
+                          <i class="bi bi-arrow-up-left"></i>
+                        </a>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="estate-name card-title fw-semibold">
+                          برج المملكة – الرياض
+                        </p>
+                        <small class="estate-type text-muted"
+                          >شقة للإيجار</small
+                        >
+                      </div>
+                      <p class="estate-location card-text main">
+                        <i class="bi bi-geo-alt"></i>
+                        <small
+                          >الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small
+                        >
+                      </p>
+                    </div>
                   </div>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <p class="estate-name card-title fw-semibold">
-                      برج المملكة – الرياض
-                    </p>
-                    <small class="estate-type text-muted">شقة للإيجار</small>
-                  </div>
-                  <p class="estate-location card-text main">
-                    <i class="bi bi-geo-alt"></i>
-                    <small
-                      >الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small
-                    >
-                  </p>
                 </div>
-              </div>
-              <div class="card">
-                <!-- estate link -->
-                <a
-                  href="estate-details.html"
-                  aria-label="مشاهدة تفاصيل عقار اسم العقار"
-                  class="link"
-                ></a>
-                <!-- fav -->
-                <button class="fav fav-icon">
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-                <!-- estate img -->
-                <div class="estate-img">
-                  <img
-                    src="images/build.png"
-                    class="card-img-top"
-                    alt="estate name"
-                  />
-                </div>
-                <!-- estate info -->
-                <div class="card-body">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <p class="estate-price secondry fw-bold">
-                      1500 <span>ريال سعودي</span>
-                    </p>
+                <div class="col">
+                  <div class="card">
+                    <!-- estate link -->
                     <a
                       href="estate-details.html"
                       aria-label="مشاهدة تفاصيل عقار اسم العقار"
-                      class="goto"
-                    >
-                      <i class="bi bi-arrow-up-left"></i>
-                    </a>
+                      class="link"
+                    ></a>
+                    <!-- fav -->
+                    <button class="fav fav-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <!-- estate img -->
+                    <div class="estate-img">
+                      <img
+                        src="images/build.png"
+                        class="card-img-top"
+                        alt="estate name"
+                      />
+                    </div>
+                    <!-- estate info -->
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="estate-price secondry fw-bold">
+                          1500 <span>ريال سعودي</span>
+                        </p>
+                        <a
+                          href="estate-details.html"
+                          aria-label="مشاهدة تفاصيل عقار اسم العقار"
+                          class="goto"
+                        >
+                          <i class="bi bi-arrow-up-left"></i>
+                        </a>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="estate-name card-title fw-semibold">
+                          برج المملكة – الرياض
+                        </p>
+                        <small class="estate-type text-muted"
+                          >شقة للإيجار</small
+                        >
+                      </div>
+                      <p class="estate-location card-text main">
+                        <i class="bi bi-geo-alt"></i>
+                        <small
+                          >الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small
+                        >
+                      </p>
+                    </div>
                   </div>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <p class="estate-name card-title fw-semibold">
-                      برج المملكة – الرياض
-                    </p>
-                    <small class="estate-type text-muted">شقة للإيجار</small>
-                  </div>
-                  <p class="estate-location card-text main">
-                    <i class="bi bi-geo-alt"></i>
-                    <small
-                      >الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small
-                    >
-                  </p>
                 </div>
-              </div>
-              <div class="card">
-                <!-- estate link -->
-                <a
-                  href="estate-details.html"
-                  aria-label="مشاهدة تفاصيل عقار اسم العقار"
-                  class="link"
-                ></a>
-                <!-- fav -->
-                <button class="fav fav-icon">
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-                <!-- estate img -->
-                <div class="estate-img">
-                  <img
-                    src="images/build.png"
-                    class="card-img-top"
-                    alt="estate name"
-                  />
-                </div>
-                <!-- estate info -->
-                <div class="card-body">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <p class="estate-price secondry fw-bold">
-                      1500 <span>ريال سعودي</span>
-                    </p>
+                <div class="col">
+                  <div class="card">
+                    <!-- estate link -->
                     <a
                       href="estate-details.html"
                       aria-label="مشاهدة تفاصيل عقار اسم العقار"
-                      class="goto"
-                    >
-                      <i class="bi bi-arrow-up-left"></i>
-                    </a>
+                      class="link"
+                    ></a>
+                    <!-- fav -->
+                    <button class="fav fav-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <!-- estate img -->
+                    <div class="estate-img">
+                      <img
+                        src="images/build.png"
+                        class="card-img-top"
+                        alt="estate name"
+                      />
+                    </div>
+                    <!-- estate info -->
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="estate-price secondry fw-bold">
+                          1500 <span>ريال سعودي</span>
+                        </p>
+                        <a
+                          href="estate-details.html"
+                          aria-label="مشاهدة تفاصيل عقار اسم العقار"
+                          class="goto"
+                        >
+                          <i class="bi bi-arrow-up-left"></i>
+                        </a>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="estate-name card-title fw-semibold">
+                          برج المملكة – الرياض
+                        </p>
+                        <small class="estate-type text-muted"
+                          >شقة للإيجار</small
+                        >
+                      </div>
+                      <p class="estate-location card-text main">
+                        <i class="bi bi-geo-alt"></i>
+                        <small
+                          >الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small
+                        >
+                      </p>
+                    </div>
                   </div>
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <p class="estate-name card-title fw-semibold">
-                      برج المملكة – الرياض
-                    </p>
-                    <small class="estate-type text-muted">شقة للإيجار</small>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <!-- estate link -->
+                    <a
+                      href="estate-details.html"
+                      aria-label="مشاهدة تفاصيل عقار اسم العقار"
+                      class="link"
+                    ></a>
+                    <!-- fav -->
+                    <button class="fav fav-icon">
+                      <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <!-- estate img -->
+                    <div class="estate-img">
+                      <img
+                        src="images/build.png"
+                        class="card-img-top"
+                        alt="estate name"
+                      />
+                    </div>
+                    <!-- estate info -->
+                    <div class="card-body">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="estate-price secondry fw-bold">
+                          1500 <span>ريال سعودي</span>
+                        </p>
+                        <a
+                          href="estate-details.html"
+                          aria-label="مشاهدة تفاصيل عقار اسم العقار"
+                          class="goto"
+                        >
+                          <i class="bi bi-arrow-up-left"></i>
+                        </a>
+                      </div>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <p class="estate-name card-title fw-semibold">
+                          برج المملكة – الرياض
+                        </p>
+                        <small class="estate-type text-muted"
+                          >شقة للإيجار</small
+                        >
+                      </div>
+                      <p class="estate-location card-text main">
+                        <i class="bi bi-geo-alt"></i>
+                        <small
+                          >الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small
+                        >
+                      </p>
+                    </div>
                   </div>
-                  <p class="estate-location card-text main">
-                    <i class="bi bi-geo-alt"></i>
-                    <small
-                      >الرياض، شارع الملك فهد، برج المملكة، الطابق 10</small
-                    >
-                  </p>
                 </div>
               </div>
             </div>
@@ -624,99 +691,160 @@
     <!-- filter  btn -->
     <button id="filter"><i class="bi bi-sliders fs-5"></i></button>
 
-    <!------------- footer section -------------->
+    <!-- footer section -->
     <footer>
-      <div class="container my-3">
-        <div class="row gx-4 justify-content-between">
-          <!-- الشركه  -->
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="d-flex align-items-center">
-              <img src="images/logo.png" width="70%" alt="" />
+      <!-- روابط الفوتر -->
+      <div class="footer-links bg-card py-4">
+        <div class="container-fluid">
+          <div class="row justify-content-between">
+            <!-- الشركة -->
+            <div class="col-12 col-lg-3">
+              <div class="d-flex align-items-center">
+                <img
+                  src="images/logo.svg"
+                  alt="شعار الشركة"
+                  class="img-fluid"
+                />
+              </div>
+
+              <div id="map" class="rounded-3 my-3 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.134911905268!2d31.394038524568394!3d31.050343574432617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79d99ef7ea253%3A0xe92319f27469b714!2z2LPZhdin2LHYqiDZgdmK2KzZhiDZhNiq2LXZhdmK2YUg2YjYqNix2YXYrNipINin2YTZhdmI2KfZgti5!5e0!3m2!1sar!2seg!4v1737894170625!5m2!1sar!2seg"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  aria-label="خريطة موقع الشركة"
+                >
+                </iframe>
+              </div>
+
+              <!-- وسائل التواصل الاجتماعي -->
+              <div
+                class="social d-flex justify-content-lg-start justify-content-center gap-3"
+              >
+                <a href="#" aria-label="رابط إلى تويتر"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a href="#" aria-label="رابط إلى فيسبوك"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" aria-label="رابط إلى لينكد إن"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#" aria-label="رابط إلى سناب شات"
+                  ><i class="fa-brands fa-snapchat"></i
+                ></a>
+              </div>
             </div>
 
-            <p class="my-4">
-              وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من
-              التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
-            </p>
-
-            <!-- social -->
-            <div class="social">
-              <div>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-              </div>
-              <div>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-              </div>
-              <div>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-              </div>
-              <div>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-              </div>
+            <!-- خريطة الموقع -->
+            <div class="col-6 col-md-4 col-lg-auto mt-3">
+              <h4>خريطة الموقع</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="index.html" aria-label="الانتقال إلى الصفحة الرئيسية"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html" aria-label="الانتقال إلى صفحة من نحن"
+                    >من نحن</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="estates.html"
+                    class="active"
+                    aria-label="الانتقال إلى صفحة العقارات"
+                    >العقارات</a
+                  >
+                </li>
+                <li>
+                  <a href="blogs.html" aria-label="الانتقال إلى صفحة المدونة"
+                    >المدونة</a
+                  >
+                </li>
+              </ul>
             </div>
-          </div>
 
-          <!-- خريطة الموقع -->
-          <div class="col-12 col-sm-4 col-md-4 col-lg-auto mt-3">
-            <h4>خريطة الموقع</h4>
-            <div class="ln"></div>
-            <ul>
-              <li><a href="index.html">الصفحة الرئيسية</a></li>
-              <li><a href=" about.html">من نحن</a></li>
-              <li><a href="estates.html">العقارات</a></li>
-              <li><a href="blogs.html">المدونة</a></li>
-              <li><a href="contracting-req.html">طلب مقاولات</a></li>
-            </ul>
-          </div>
+            <!-- روابط سريعة -->
+            <div class="col-6 col-md-4 col-lg-auto mt-3">
+              <h4>روابط سريعة</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="policy.html"
+                    aria-label="الانتقال إلى صفحة سياسة الخصوصية"
+                    >سياسة الخصوصية</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="common-que.html"
+                    aria-label="الانتقال إلى صفحة الأسئلة الشائعة"
+                    >الأسئلة الشائعة</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    aria-label="الانتقال إلى صفحة تواصل معنا"
+                    >تواصل معنا</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="login.html"
+                    aria-label="الانتقال إلى صفحة تسجيل الدخول"
+                    >تسجيل الدخول</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-          <!-- المساعدة -->
-          <div class="col-12 col-sm-4 col-sm-4 col-md-4 col-lg-auto mt-3">
-            <h4>المساعدة</h4>
-            <div class="ln"></div>
-            <ul>
-              <li><a href="contact.html">تواصل معنا</a></li>
-              <li><a href="policy.html">سياسيات الخصوصية</a></li>
-              <li><a href="conditions.html">الشروط والأحكام</a></li>
-              <li><a href="blacklist.html">أسباب التعرض للقائمة السوداء</a></li>
-              <li><a href="common-que.html">الأسئلة الشائعة</a></li>
-            </ul>
-          </div>
-
-          <!-- النشرة البريدية -->
-          <div class="col-12 col-sm-4 col-md-4 col-lg-3 mt-3">
-            <h4>النشرة البريدية</h4>
-            <div class="ln"></div>
-            <form action="">
-              <div class="row subscribe justify-content-end">
-                <div class="col-12">
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-email">
-                      <i class="bi bi-envelope"></i>
-                    </span>
-                    <input
-                      type="email"
-                      class="form-control p-2 border-0"
-                      placeholder=""
-                      aria-label="email"
-                      aria-describedby="basic-email"
-                    />
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="aqar-button">
-                    <div class="text">اشتراك</div>
+            <!-- الاشتراك وتحديثات العقارات -->
+            <div class="col-12 col-lg-3 mt-3">
+              <h4>اشترك لتلقي تحديثات العقارات</h4>
+              <form action="">
+                <div class="input-group my-3">
+                  <input
+                    type="email"
+                    class="form-control border-end-0"
+                    placeholder="البريد الإلكتروني"
+                    aria-label="إدخال البريد الإلكتروني"
+                  />
+                  <button
+                    type="submit"
+                    class="input-group-text bg-white main fs-5"
+                    aria-label="إرسال البريد الإلكتروني"
+                  >
+                    إرسال
                   </button>
                 </div>
-              </div>
-            </form>
+              </form>
+              <h4>رخصة فال</h4>
+              <img
+                src="images/qr.png"
+                width="140"
+                alt="رمز الاستجابة السريعة"
+              />
+            </div>
           </div>
         </div>
       </div>
-      <!-- nested footer -->
-      <div class="sub-footer">
+
+      <!-- الفوتر الفرعي -->
+      <div class="sub-footer py-2">
         <p class="text-center mb-0">
-          <a href="https://smartvision4p.com" target="_blank">
-            <span>جميع الحقوق محفوظة لـشركة سهم للخدمات العقارية</span>
+          <a
+            href="https://smartvision4p.com"
+            target="_blank"
+            class="d-flex align-items-center gap-2 justify-content-center text-white text-decoration-none"
+            aria-label="رابط إلى موقع شركة سمارت فيجن"
+          >
+            <span>تصميم وبرمجة شركة سمارت فيجن للبرمجيات</span>
+            <img src="images/smart-logo.svg" alt="شعار سمارت فيجن" />
           </a>
         </p>
       </div>
@@ -726,7 +854,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
 
     <!-- lottiefiles script -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 
     <!-- owl-carousel script -->
     <script src="js/owl.carousel.min.js"></script>

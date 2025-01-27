@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Negmet Alsharq RealEstate</title>
+    <link rel="icon" href="images/fav.svg" />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
+
+    <!-- owl-carousel link -->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+
+    <!-- rateyo link -->
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+
+    <!-- nice select link -->
+    <link rel="stylesheet" href="css/nice-select.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- الشريط العلوي -->
+      <nav class="navbar top-nav p-0">
+        <div class="container-fluid">
+          <div
+            class="helper-links w-100 d-flex align-items-center justify-content-between py-2"
+          >
+            <ul class="helper-pages m-0 d-flex align-items-center">
+              <li class="d-md-block d-none">
+                <a href="help.html" aria-label="الذهاب إلى الأسئلة الشائعة">
+                  <span>الأسئلة الشائعة</span>
+                </a>
+              </li>
+              <li class="d-md-block d-none">
+                <a href="policy.html" aria-label="الذهاب إلى سياسة الخصوصية">
+                  <span>سياسة الخصوصية</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" id="lang" aria-label="تغيير اللغة إلى الإنجليزية">
+                  <i class="bi bi-globe"></i>
+                  <span>EN</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="helper-pages m-0 d-flex align-items-center">
+              <li>
+                <a href="register.html" aria-label="إنشاء حساب جديد">
+                  <i class="bi bi-box-arrow-in-left"></i>
+                  <span>إنشاء حساب</span>
+                </a>
+              </li>
+              <li>
+                <a href="login.html" aria-label="تسجيل الدخول">
+                  <i class="bi bi-person"></i>
+                  <span>تسجيل دخول</span>
+                </a>
+              </li>
+              <li>
+                <a href="profile.html" aria-label="الملف الشخصي">
+                  <i class="bi bi-person"></i>
+                  <span>الملف الشخصي</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- القائمة الرئيسية -->
+      <nav class="navbar main-nav navbar-expand-lg top-0">
+        <div class="container-fluid">
+          <a class="navbar-brand m-0" href="index.html">
+            <img src="images/logo.svg" alt="Negmet Alsharq RealEstate Logo" />
+          </a>
+          <div
+            class="collapse navbar-collapse justify-content-between align-items-center"
+            id="navbarSupportedContent"
+          >
+            <!-- روابط القائمة -->
+            <ul class="navbar-nav gap-md-4 mb-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="index.html"
+                  aria-label="الذهاب إلى الصفحة الرئيسية"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="about.html"
+                  aria-label="الذهاب إلى صفحة من نحن"
+                  >من نحن</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="services.html"
+                  aria-label="الذهاب إلى صفحة الخدمات"
+                  >خدماتنا</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="estates.html"
+                  aria-label="الذهاب إلى صفحة العقارات"
+                  >العقارات</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="contact.html"
+                  aria-label="الذهاب إلى صفحة تواصل معنا"
+                  >تواصل معنا</a
+                >
+              </li>
+            </ul>
+            <!-- مربع البحث -->
+            <div class="search-box">
+              <form action="" method="GET">
+                <input
+                  type="search"
+                  name="reference_number"
+                  class="form-control"
+                  placeholder="بحث برقم تعريف العقار"
+                  aria-label="بحث برقم تعريف العقار"
+                />
+                <button type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- breadcrumb -->
+    <section class="">
+      <div class="container-fluid">
+        <div class="d-flex py-4 align-items-center breadcrumb border-bottom">
+          <a href="index.html" class="fw-semibold fs-5"> الرئيسية</a>
+          <i class="fa-solid fa-angles-left mx-2 text-muted"></i>
+          <h2 class="fw-semibold secondry fs-5 mb-0">سياسة الخصوصية</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- common que -->
+    <section class="contactUs py-5">
+      <div class="container-fluid">
+        <div class="row gy-3">
+          <!-- contact data -->
+          <div class="col-12 col-lg-4">
+            <div class="contact-data bg-main">
+              <div class="contact-info pb-4">
+                <ul class="d-flex flex-column gap-4">
+                  <li>
+                    <i class="bi bi-envelope"></i>
+                    <a href="mailto:Admin@domain.com">Admin@domain.com</a>
+                  </li>
+
+                  <li>
+                    <i class="bi bi-telephone-outbound"></i>
+                    <a href="tel:966 5326 3256355">966 5326 3256355</a>
+                  </li>
+
+                  <li>
+                    <i class="bi bi-telephone-outbound"></i>
+                    <a href="tel:966 5326 3256355">966 5326 3256355</a>
+                  </li>
+
+                  <li>
+                    <i class="bi bi-geo-alt"></i>
+                    <a href="">العنوان يكتب هنا</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- وسائل التواصل الاجتماعي -->
+              <div class="followUs">
+                <p class="fw-semibold fs-4 secondry mb-4">تابعنا</p>
+              </div>
+              <div
+                class="social d-flex justify-content-lg-start justify-content-center gap-3"
+              >
+                <a href="#" aria-label="رابط إلى تويتر"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a href="#" aria-label="رابط إلى فيسبوك"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" aria-label="رابط إلى لينكد إن"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#" aria-label="رابط إلى سناب شات"
+                  ><i class="fa-brands fa-snapchat"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- contact form -->
+          <div class="col">
+            <div class="contact-form py-4 px-4">
+              <h5 class="fw-bold fs-3">تواصل معنا</h5>
+              <p class="text-muted my-3">
+                نحن هنا لمساعدتك! إذا كان لديك أي استفسارات أو تحتاج إلى دعم، لا تتردد في التواصل معنا عبر النموذج أدناه. يمكنك أيضًا الاتصال بنا عبر الهاتف أو البريد الإلكتروني. فريقنا جاهز للإجابة على جميع أسئلتك وتقديم المساعدة التي تحتاجها
+              </p>
+              <form action="">
+                <div class="row gy-3 align-items-center">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInputUserName"
+                        placeholder="name@example.com"
+                        required
+                      />
+                      <label for="floatingInputUserName">الاسم</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingUserEmail"
+                        placeholder="البريد الإلكتروني"
+                      />
+                      <label for="floatingUserEmail">البريد الإلكتروني</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        style="height: 150px"
+                        id="floatingContactText"
+                        placeholder="اكتب رسالتك هنا"
+                        required
+                      ></textarea>
+                      <label for="floatingContactText">الرسالة</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- ارسال -->
+                <button type="submit" class="btn main-outline-btn mt-3 px-5 py-2">
+                  ارسال
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="contact_map" class="w-100 pt-5">
+          <iframe
+            class="rounded-4"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.318526257364!2d31.367762891683945!3d31.032888687375678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79d99ef7ea253%3A0xe92319f27469b714!2z2LPZhdin2LHYqiDZgdmK2KzZhiDZhNiq2LXZhdmK2YUg2YjYqNix2YXYrNipINin2YTZhdmI2KfZgti5INmI2KfZhNiq2LfYqNmK2YLYp9iqINmI2KfZhNmF2KrYp9is2LEg2KfZhNin2YTZg9iq2LHZiNmG2YrYqQ!5e0!3m2!1sar!2seg!4v1658909547414!5m2!1sar!2seg"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer>
+      <!-- روابط الفوتر -->
+      <div class="footer-links bg-card py-4">
+        <div class="container-fluid">
+          <div class="row justify-content-between">
+            <!-- الشركة -->
+            <div class="col-12 col-lg-3">
+              <div class="d-flex align-items-center">
+                <img
+                  src="images/logo.svg"
+                  alt="شعار الشركة"
+                  class="img-fluid"
+                />
+              </div>
+
+              <div id="map" class="rounded-3 my-3 overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.134911905268!2d31.394038524568394!3d31.050343574432617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79d99ef7ea253%3A0xe92319f27469b714!2z2LPZhdin2LHYqiDZgdmK2KzZhiDZhNiq2LXZhdmK2YUg2YjYqNix2YXYrNipINin2YTZhdmI2KfZgti5!5e0!3m2!1sar!2seg!4v1737894170625!5m2!1sar!2seg"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  aria-label="خريطة موقع الشركة"
+                >
+                </iframe>
+              </div>
+
+              <!-- وسائل التواصل الاجتماعي -->
+              <div
+                class="social d-flex justify-content-lg-start justify-content-center gap-3"
+              >
+                <a href="#" aria-label="رابط إلى تويتر"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a href="#" aria-label="رابط إلى فيسبوك"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="#" aria-label="رابط إلى لينكد إن"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="#" aria-label="رابط إلى سناب شات"
+                  ><i class="fa-brands fa-snapchat"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- خريطة الموقع -->
+            <div class="col-6 col-md-4 col-lg-auto mt-3">
+              <h4>خريطة الموقع</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="index.html" aria-label="الانتقال إلى الصفحة الرئيسية"
+                    >الرئيسية</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html" aria-label="الانتقال إلى صفحة من نحن"
+                    >من نحن</a
+                  >
+                </li>
+                <li>
+                  <a href="estates.html" aria-label="الانتقال إلى صفحة العقارات"
+                    >العقارات</a
+                  >
+                </li>
+                <li>
+                  <a href="blogs.html" aria-label="الانتقال إلى صفحة المدونة"
+                    >المدونة</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- روابط سريعة -->
+            <div class="col-6 col-md-4 col-lg-auto mt-3">
+              <h4>روابط سريعة</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="policy.html"
+                    aria-label="الانتقال إلى صفحة سياسة الخصوصية"
+                    >سياسة الخصوصية</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="common-que.html"
+                    aria-label="الانتقال إلى صفحة الأسئلة الشائعة"
+                    >الأسئلة الشائعة</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="active"
+                    aria-label="الانتقال إلى صفحة تواصل معنا"
+                    >تواصل معنا</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="login.html"
+                    aria-label="الانتقال إلى صفحة تسجيل الدخول"
+                    >تسجيل الدخول</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- الاشتراك وتحديثات العقارات -->
+            <div class="col-12 col-lg-3 mt-3">
+              <h4>اشترك لتلقي تحديثات العقارات</h4>
+              <form action="">
+                <div class="input-group my-3">
+                  <input
+                    type="email"
+                    class="form-control border-end-0"
+                    placeholder="البريد الإلكتروني"
+                    aria-label="إدخال البريد الإلكتروني"
+                  />
+                  <button
+                    type="submit"
+                    class="input-group-text bg-white main fs-5"
+                    aria-label="إرسال البريد الإلكتروني"
+                  >
+                    إرسال
+                  </button>
+                </div>
+              </form>
+              <h4>رخصة فال</h4>
+              <img
+                src="images/qr.png"
+                width="140"
+                alt="رمز الاستجابة السريعة"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- الفوتر الفرعي -->
+      <div class="sub-footer py-2">
+        <p class="text-center mb-0">
+          <a
+            href="https://smartvision4p.com"
+            target="_blank"
+            class="d-flex align-items-center gap-2 justify-content-center text-white text-decoration-none"
+            aria-label="رابط إلى موقع شركة سمارت فيجن"
+          >
+            <span>تصميم وبرمجة شركة سمارت فيجن للبرمجيات</span>
+            <img src="images/smart-logo.svg" alt="شعار سمارت فيجن" />
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- lottiefiles script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+
+    <!-- owl-carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- rateyo script -->
+    <script src="js/jquery.rateyo.min.js"></script>
+
+    <!-- nice select script -->
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
