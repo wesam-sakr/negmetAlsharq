@@ -24,17 +24,31 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
 
-    <!-- rateyo link -->
-    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
-
     <!-- nice select link -->
     <link rel="stylesheet" href="css/nice-select.css" />
+    
+    <!-- fancybox link -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <!-- go to up -->
+    <div class="fixed-icon" id="scrollUp">
+      <a href="#" aria-label="go to page up">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- fixed snapchat icon -->
+    <div class="fixed-icon snapchat">
+      <a href="" target="_blank" aria-label="الذهاب الى حسابنا عبر سناب شات">
+        <i class="fa-brands fa-snapchat fa-shake"></i>
+      </a>
+    </div>
+
     <header>
       <!-- الشريط العلوي -->
       <nav class="navbar top-nav p-0">
@@ -94,7 +108,7 @@
             id="navbarSupportedContent"
           >
             <!-- روابط القائمة -->
-            <ul class="navbar-nav gap-md-4 mb-0">
+            <ul class="navbar-nav gap-lg-4 mb-0">
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -114,17 +128,17 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="services.html"
-                  aria-label="الذهاب إلى صفحة الخدمات"
-                  >خدماتنا</a
+                  href="estates.html"
+                  aria-label="الذهاب إلى صفحة العقارات"
+                  >العقارات</a
                 >
               </li>
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="estates.html"
-                  aria-label="الذهاب إلى صفحة العقارات"
-                  >العقارات</a
+                  href="blogs.html"
+                  aria-label="الذهاب إلى صفحة المدونة"
+                  >المدونة</a
                 >
               </li>
               <li class="nav-item">
@@ -173,17 +187,17 @@
         <div class="d-flex py-4 align-items-center breadcrumb border-bottom">
           <a href="index.html" class="fw-semibold fs-5"> الرئيسية</a>
           <i class="fa-solid fa-angles-left mx-2 text-muted"></i>
-          <h2 class="fw-semibold secondry fs-5 mb-0">سياسة الخصوصية</h2>
+          <h2 class="fw-semibold secondry fs-5 mb-0">تواصل معنا</h2>
         </div>
       </div>
     </section>
 
-    <!-- common que -->
+    <!-- contactUs que -->
     <section class="contactUs py-5">
       <div class="container-fluid">
-        <div class="row gy-3">
+        <div class="row align-items-center gy-3">
           <!-- contact data -->
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-md-5 col-lg-4">
             <div class="contact-data bg-main">
               <div class="contact-info pb-4">
                 <ul class="d-flex flex-column gap-4">
@@ -231,15 +245,18 @@
             </div>
           </div>
           <!-- contact form -->
-          <div class="col">
+          <div class="col-md-7 col-lg-8">
             <div class="contact-form py-4 px-4">
               <h5 class="fw-bold fs-3">تواصل معنا</h5>
               <p class="text-muted my-3">
-                نحن هنا لمساعدتك! إذا كان لديك أي استفسارات أو تحتاج إلى دعم، لا تتردد في التواصل معنا عبر النموذج أدناه. يمكنك أيضًا الاتصال بنا عبر الهاتف أو البريد الإلكتروني. فريقنا جاهز للإجابة على جميع أسئلتك وتقديم المساعدة التي تحتاجها
+                نحن هنا لمساعدتك! إذا كان لديك أي استفسارات أو تحتاج إلى دعم، لا
+                تتردد في التواصل معنا عبر النموذج أدناه. يمكنك أيضًا الاتصال بنا
+                عبر الهاتف أو البريد الإلكتروني. فريقنا جاهز للإجابة على جميع
+                أسئلتك وتقديم المساعدة التي تحتاجها
               </p>
               <form action="">
                 <div class="row gy-3 align-items-center">
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <div class="form-floating">
                       <input
                         type="text"
@@ -251,7 +268,7 @@
                       <label for="floatingInputUserName">الاسم</label>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-lg-6">
                     <div class="form-floating">
                       <input
                         type="email"
@@ -276,7 +293,10 @@
                   </div>
                 </div>
                 <!-- ارسال -->
-                <button type="submit" class="btn main-outline-btn mt-3 px-5 py-2">
+                <button
+                  type="submit"
+                  class="btn main-outline-btn mt-3 px-5 py-2"
+                >
                   ارسال
                 </button>
               </form>
@@ -347,7 +367,7 @@
             </div>
 
             <!-- خريطة الموقع -->
-            <div class="col-6 col-md-4 col-lg-auto mt-3">
+            <div class="col-6 col-md-3 col-lg-auto mt-3">
               <h4>خريطة الموقع</h4>
               <ul class="list-unstyled">
                 <li>
@@ -374,7 +394,7 @@
             </div>
 
             <!-- روابط سريعة -->
-            <div class="col-6 col-md-4 col-lg-auto mt-3">
+            <div class="col-6 col-md-3 col-lg-auto mt-3">
               <h4>روابط سريعة</h4>
               <ul class="list-unstyled">
                 <li>
@@ -410,7 +430,7 @@
             </div>
 
             <!-- الاشتراك وتحديثات العقارات -->
-            <div class="col-12 col-lg-3 mt-3">
+            <div class="col-12 col-md-5 col-lg-3 mt-3">
               <h4>اشترك لتلقي تحديثات العقارات</h4>
               <form action="">
                 <div class="input-group my-3">
@@ -459,20 +479,17 @@
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
-    <!-- lottiefiles script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
-
     <!-- owl-carousel script -->
     <script src="js/owl.carousel.min.js"></script>
 
     <!-- bootstrap script -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- rateyo script -->
-    <script src="js/jquery.rateyo.min.js"></script>
-
+    
     <!-- nice select script -->
     <script src="js/jquery.nice-select.min.js"></script>
+    
+    <!-- fancybox script -->
+    <script src="js/jquery.fancybox.min.js"></script>
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>

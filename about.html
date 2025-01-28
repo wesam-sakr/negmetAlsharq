@@ -26,7 +26,7 @@
 
     <!-- nice select link -->
     <link rel="stylesheet" href="css/nice-select.css" />
-    
+
     <!-- fancybox link -->
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
@@ -135,7 +135,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link active"
                   href="blogs.html"
                   aria-label="الذهاب إلى صفحة المدونة"
                   >المدونة</a
@@ -187,238 +187,68 @@
         <div class="d-flex py-4 align-items-center breadcrumb border-bottom">
           <a href="index.html" class="fw-semibold fs-5"> الرئيسية</a>
           <i class="fa-solid fa-angles-left mx-2 text-muted"></i>
-          <h2 class="fw-semibold secondry fs-5 mb-0">الأسئلة الشائعة</h2>
+          <p class="fw-semibold secondry fs-5 mb-0">من نحن</p>
         </div>
       </div>
     </section>
 
-    <!-- common que -->
-    <section class="que py-5">
+    <!-- about us -->
+    <section class="about-us py-5">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-7 col-lg-8">
-            <div class="section-title pb-4">
-              <h2 class="secName fw-semibold fs-4">اكتشف المزيد</h2>
-              <p class="secDesc fw-bold secondry fs-3 lh-sm col-md-8">
-                نقدم لك إجابات شاملة وواضحة حول عمليات الشراء، البيع، التأجير،
-                والاستثمار. نحن هنا لمساعدتك
+        <div class="row align-items-center gy-3 gx-md-5">
+          <div class="col-md-9 col-lg-6">
+            <img src="images/about.png" class="w-100" alt="" />
+          </div>
+          <div class="col-lg-6">
+            <div class="section-title pb-2">
+              <h2 class="secName fw-semibold fs-4">من نحن؟</h2>
+              <p class="secDesc fw-bold secondry fs-3">
+                اكتشف عالم المشاريع العقارية المميزة مع نجمة الشرق
               </p>
             </div>
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    ما المستندات اللازمة لبيع عقار؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      تحتاج إلى سند الملكية، الهوية الشخصية، وعقد البيع. تحتاج
-                      إلى سند الملكية، الهوية الشخصية، وعقد البيع
-                    </p>
-                  </div>
+            <div class="about-txt d-flex flex-column gap-3">
+              <p>
+                في نجمة الشرق للعقارات، نسعى لنكون الوجهة الأولى لكل من يبحث عن
+                تميز في سوق العقارات. تأسست شركتنا على أسس متينة من الثقة
+                والشفافية، لتقديم خدمات عقارية متكاملة تلبي احتياجات العملاء
+                بكافة تطلعاتهم
+              </p>
+              <p>
+                نمتلك فريقًا من الخبراء المتخصصين الذين يعملون بجد لتوفير أفضل
+                الفرص العقارية، سواء كنت تبحث عن شراء، بيع، أو تأجير عقار. نسعى
+                دائمًا لتقديم تجربة مميزة لعملائنا من خلال توفير عقارات متنوعة
+                تناسب جميع الأذواق، مع خدمات استشارية تساعدك في اتخاذ القرار
+                الأفضل
+              </p>
+            </div>
+            <div class="counters">
+              <div
+                class="d-flex text-center gap-4 gap-md-5 align-items-center gy-4 py-4"
+              >
+                <!-- عميل راضي -->
+                <div class="count-txt">
+                  <p class="counter" data-target="550">0</p>
+                  <p class="fs-4 fw-medium">عميل راضي</p>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    كيف يمكنني تقييم قيمة عقاري؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      يمكنك تقييم قيمة عقارك من خلال الاستعانة بمثمن عقاري معتمد
-                      أو مقارنة أسعار العقارات المشابهة في منطقتك.
-                    </p>
-                  </div>
+                <!-- سنوات الخبرة -->
+                <div class="count-txt count-border">
+                  <p class="counter" data-target="10">0</p>
+                  <p class="fs-4 fw-medium">سنوات الخبرة</p>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    ما هي مدة عقود الإيجار الشائعة؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      مدة عقود الإيجار الشائعة تتراوح بين سنة إلى ثلاث سنوات،
-                      حسب الاتفاق بين الطرفين.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    هل يمكنني تأجير عقاري أثناء فترة التمويل؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      نعم، يمكنك تأجير عقارك أثناء فترة التمويل، بشرط موافقة
-                      الجهة الممولة وفقًا لشروط العقد.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
-                    كيف أختار وكيل عقاري مناسب؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      لاختيار وكيل عقاري مناسب، بحث عن شخص ذو سمعة جيدة، خبرة
-                      واسعة، ومعرفة بالسوق المحلي.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix"
-                    aria-expanded="false"
-                    aria-controls="collapseSix"
-                  >
-                    ما المصاريف الإضافية عند شراء عقار؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseSix"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      المصاريف الإضافية عند شراء عقار تشمل رسوم التسجيل،
-                      الضرائب، وأتعاب الوكيل العقاري إن وجد.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSeven"
-                    aria-expanded="false"
-                    aria-controls="collapseSeven"
-                  >
-                    كيف أحصل على تمويل عقاري؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseSeven"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      يمكنك الحصول على تمويل عقاري من خلال التقديم لدى البنوك أو
-                      شركات التمويل العقاري، مع توفير المستندات المطلوبة مثل
-                      إثبات الدخل وسند الملكية.
-                    </p>
-                  </div>
+                <!-- مشروع ناجح -->
+                <div class="count-txt">
+                  <p class="counter" data-target="50">0</p>
+                  <p class="fs-4 fw-medium">مشروع ناجح</p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-5 col-lg-4">
-            <div class="ask-us bg-card p-4 text-center">
-              <img
-                src="images/que.svg"
-                class="w-75"
-                alt=""
-              />
-              <p class="fw-semibold main fs-3 py-3">لم تجد اجابتك ؟</p>
-              <form action="">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInputName" placeholder="الاسم">
-                  <label for="floatingInputName">الاسم</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com">
-                  <label for="floatingInputEmail">البريد الالكتروني</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <textarea class="form-control" placeholder="اترك سؤالك هنا" id="floatingInputQue"></textarea>
-                  <label for="floatingInputQue">سؤالك</label>
-                </div>
-                <button
-                  aria-label="اضغط هنا لارسال سؤالك"
-                  class="main-btn ms-auto mt-4"
-                >
-                  ارسال
-                </button>
-              </form>
-            </div>
+            <a
+              href="about.html"
+              aria-label="تعرف على شركتنا نجمة الشرق"
+              class="main-outline-btn"
+            >
+              المزيد
+            </a>
           </div>
         </div>
       </div>
@@ -491,7 +321,10 @@
                   >
                 </li>
                 <li>
-                  <a href="blogs.html" aria-label="الانتقال إلى صفحة المدونة"
+                  <a
+                    href="blogs.html"
+                    class="active"
+                    aria-label="الانتقال إلى صفحة المدونة"
                     >المدونة</a
                   >
                 </li>
@@ -512,7 +345,6 @@
                 <li>
                   <a
                     href="common-que.html"
-                    class="active"
                     aria-label="الانتقال إلى صفحة الأسئلة الشائعة"
                     >الأسئلة الشائعة</a
                   >
@@ -589,10 +421,10 @@
 
     <!-- bootstrap script -->
     <script src="js/bootstrap.min.js"></script>
-    
+
     <!-- nice select script -->
     <script src="js/jquery.nice-select.min.js"></script>
-    
+
     <!-- fancybox script -->
     <script src="js/jquery.fancybox.min.js"></script>
 

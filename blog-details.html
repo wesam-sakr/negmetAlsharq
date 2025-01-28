@@ -26,7 +26,7 @@
 
     <!-- nice select link -->
     <link rel="stylesheet" href="css/nice-select.css" />
-    
+
     <!-- fancybox link -->
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
@@ -135,7 +135,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
+                  class="nav-link active"
                   href="blogs.html"
                   aria-label="الذهاب إلى صفحة المدونة"
                   >المدونة</a
@@ -187,238 +187,173 @@
         <div class="d-flex py-4 align-items-center breadcrumb border-bottom">
           <a href="index.html" class="fw-semibold fs-5"> الرئيسية</a>
           <i class="fa-solid fa-angles-left mx-2 text-muted"></i>
-          <h2 class="fw-semibold secondry fs-5 mb-0">الأسئلة الشائعة</h2>
+          <p class="fw-semibold secondry fs-5 mb-0">المدونة</p>
         </div>
       </div>
     </section>
 
-    <!-- common que -->
-    <section class="que py-5">
+    <!-- blogs section -->
+    <section class="blogs py-5">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-7 col-lg-8">
-            <div class="section-title pb-4">
-              <h2 class="secName fw-semibold fs-4">اكتشف المزيد</h2>
-              <p class="secDesc fw-bold secondry fs-3 lh-sm col-md-8">
-                نقدم لك إجابات شاملة وواضحة حول عمليات الشراء، البيع، التأجير،
-                والاستثمار. نحن هنا لمساعدتك
-              </p>
-            </div>
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    ما المستندات اللازمة لبيع عقار؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  class="accordion-collapse collapse show"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      تحتاج إلى سند الملكية، الهوية الشخصية، وعقد البيع. تحتاج
-                      إلى سند الملكية، الهوية الشخصية، وعقد البيع
-                    </p>
-                  </div>
-                </div>
+          <div class="col-md-8 col-lg-9">
+            <div class="card">
+              <!-- blog img -->
+              <div class="blog-img">
+                <img
+                  src="images/build.png"
+                  class="card-img-top"
+                  alt="blog name"
+                />
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    كيف يمكنني تقييم قيمة عقاري؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    <p>
-                      يمكنك تقييم قيمة عقارك من خلال الاستعانة بمثمن عقاري معتمد
-                      أو مقارنة أسعار العقارات المشابهة في منطقتك.
-                    </p>
-                  </div>
+              <!-- blog info -->
+              <div class="card-body px-0">
+                <span class="secondry fw-bold">5 سبتمبر 2022</span>
+                <div class="d-flex justify-content-between align-items-center">
+                  <h1 class="blog-name card-title fw-semibold fs-4 my-2">
+                    استكشف آخر الاتجاهات والتطورات في سوق العقارات
+                  </h1>
                 </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    ما هي مدة عقود الإيجار الشائعة؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
+                <div class="blog-description card-text d-flex flex-column gap-3 text-muted">
                     <p>
-                      مدة عقود الإيجار الشائعة تتراوح بين سنة إلى ثلاث سنوات،
-                      حسب الاتفاق بين الطرفين.
+                        يشهد سوق العقارات تحولاً مستمراً نتيجة لعوامل اقتصادية وتقنية واجتماعية متعددة. سواء كنت مستثمرًا، بائعًا، أو مشتريًا، فإن متابعة آخر التطورات يمكن أن يساعدك على اتخاذ قرارات مستنيرة.
                     </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    هل يمكنني تأجير عقاري أثناء فترة التمويل؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
                     <p>
-                      نعم، يمكنك تأجير عقارك أثناء فترة التمويل، بشرط موافقة
-                      الجهة الممولة وفقًا لشروط العقد.
+                        1. التحول نحو العقارات الذكية: العقارات الذكية أصبحت أكثر شعبية بفضل التكنولوجيا. من المنازل التي يمكن التحكم فيها عن بُعد إلى المكاتب الذكية التي تعزز الإنتاجية، يجذب هذا التوجه المزيد من المشترين الذين يبحثون عن راحة وأمان أكبر.
                     </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive"
-                    aria-expanded="false"
-                    aria-controls="collapseFive"
-                  >
-                    كيف أختار وكيل عقاري مناسب؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseFive"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
                     <p>
-                      لاختيار وكيل عقاري مناسب، بحث عن شخص ذو سمعة جيدة، خبرة
-                      واسعة، ومعرفة بالسوق المحلي.
+                        2. صعود الاستثمارات في المناطق الناشئة: مع ارتفاع أسعار العقارات في المدن الكبرى، بدأ المستثمرون في التوجه نحو المناطق الناشئة التي تقدم فرصًا أكبر للنمو وعوائد أعلى.
                     </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix"
-                    aria-expanded="false"
-                    aria-controls="collapseSix"
-                  >
-                    ما المصاريف الإضافية عند شراء عقار؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseSix"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
                     <p>
-                      المصاريف الإضافية عند شراء عقار تشمل رسوم التسجيل،
-                      الضرائب، وأتعاب الوكيل العقاري إن وجد.
+                        3. الاهتمام بالاستدامة البيئية: أصبح المشترون أكثر وعياً بأهمية الاستدامة، مما زاد الطلب على المباني الصديقة للبيئة. يشمل ذلك استخدام المواد المستدامة، تقنيات توفير الطاقة، ونظم إعادة التدوير.
                     </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSeven"
-                    aria-expanded="false"
-                    aria-controls="collapseSeven"
-                  >
-                    كيف أحصل على تمويل عقاري؟
-                  </button>
-                </h2>
-                <div
-                  id="collapseSeven"
-                  class="accordion-collapse collapse"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
                     <p>
-                      يمكنك الحصول على تمويل عقاري من خلال التقديم لدى البنوك أو
-                      شركات التمويل العقاري، مع توفير المستندات المطلوبة مثل
-                      إثبات الدخل وسند الملكية.
+                        4. تأثير التكنولوجيا على عملية البيع والشراء: التكنولوجيا لم تغير فقط شكل العقارات، بل غيرت أيضًا كيفية شرائها وبيعها. التطبيقات العقارية والواقع الافتراضي والذكاء الاصطناعي 
                     </p>
-                  </div>
+                    <p>
+                        أصبحت أدوات أساسية تساعد المشترين على استكشاف العقارات من أي مكان. 5
+                        . تفضيلات الجيل الجديد: يظهر أن الجيل الجديد يفضل الشقق الصغيرة والمساحات متعددة الاستخدامات على المنازل التقليدية الكبيرة، مما يدفع المطورين إلى تعديل خططهم لتلبية هذه التفضيلات. خاتمة: البقاء على اطلاع بآخر الاتجاهات والتطورات في سوق العقارات أمر ضروري لكل من يعمل في هذا القطاع. يساعد ذلك على الاستفادة من الفرص الجديدة وتجنب المخاطر المحتملة.
+                    </p>   
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-5 col-lg-4">
-            <div class="ask-us bg-card p-4 text-center">
-              <img
-                src="images/que.svg"
-                class="w-75"
-                alt=""
-              />
-              <p class="fw-semibold main fs-3 py-3">لم تجد اجابتك ؟</p>
-              <form action="">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInputName" placeholder="الاسم">
-                  <label for="floatingInputName">الاسم</label>
+          <div class="col-md-4 col-lg-3">
+            <p class="fw-bold fs-4 mb-3">مقالات مشابهة</p>
+            <div class="card">
+                <!-- blog link -->
+                <a
+                  href="blog-details.html"
+                  aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                  class="link"
+                ></a>
+                <!-- blog img -->
+                <div class="blog-img">
+                  <img
+                    src="images/build.png"
+                    class="card-img-top"
+                    alt="blog name"
+                  />
                 </div>
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com">
-                  <label for="floatingInputEmail">البريد الالكتروني</label>
+                <!-- blog info -->
+                <div class="card-body px-0">
+                  <span class="secondry fw-bold">5 سبتمبر 2022</span>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="blog-name cut-text card-title fw-semibold fs-4">
+                      استكشف آخر الاتجاهات والتطورات في سوق العقارات
+                    </p>
+                  </div>
+                  <p class="blog-description cut-text card-text text-muted">
+                    الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات
+                    أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا
+                    المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال،
+                    سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك
+                    الاستثمارية.
+                  </p>
+                  <a
+                    href="blog-details.html"
+                    aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                    class="more main fs-5"
+                    >المزيد</a
+                  >
                 </div>
-                <div class="form-floating mb-3">
-                  <textarea class="form-control" placeholder="اترك سؤالك هنا" id="floatingInputQue"></textarea>
-                  <label for="floatingInputQue">سؤالك</label>
+              </div>
+              <div class="card">
+                <!-- blog link -->
+                <a
+                  href="blog-details.html"
+                  aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                  class="link"
+                ></a>
+                <!-- blog img -->
+                <div class="blog-img">
+                  <img
+                    src="images/build.png"
+                    class="card-img-top"
+                    alt="blog name"
+                  />
                 </div>
-                <button
-                  aria-label="اضغط هنا لارسال سؤالك"
-                  class="main-btn ms-auto mt-4"
-                >
-                  ارسال
-                </button>
-              </form>
-            </div>
+                <!-- blog info -->
+                <div class="card-body px-0">
+                  <span class="secondry fw-bold">5 سبتمبر 2022</span>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="blog-name cut-text card-title fw-semibold fs-4">
+                      استكشف آخر الاتجاهات والتطورات في سوق العقارات
+                    </p>
+                  </div>
+                  <p class="blog-description cut-text card-text text-muted">
+                    الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات
+                    أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا
+                    المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال،
+                    سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك
+                    الاستثمارية.
+                  </p>
+                  <a
+                    href="blog-details.html"
+                    aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                    class="more main fs-5"
+                    >المزيد</a
+                  >
+                </div>
+              </div>
+              <div class="card">
+                <!-- blog link -->
+                <a
+                  href="blog-details.html"
+                  aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                  class="link"
+                ></a>
+                <!-- blog img -->
+                <div class="blog-img">
+                  <img
+                    src="images/build.png"
+                    class="card-img-top"
+                    alt="blog name"
+                  />
+                </div>
+                <!-- blog info -->
+                <div class="card-body px-0">
+                  <span class="secondry fw-bold">5 سبتمبر 2022</span>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="blog-name cut-text card-title fw-semibold fs-4">
+                      استكشف آخر الاتجاهات والتطورات في سوق العقارات
+                    </p>
+                  </div>
+                  <p class="blog-description cut-text card-text text-muted">
+                    الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات
+                    أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا
+                    المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال،
+                    سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك
+                    الاستثمارية.
+                  </p>
+                  <a
+                    href="blog-details.html"
+                    aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                    class="more main fs-5"
+                    >المزيد</a
+                  >
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -491,7 +426,10 @@
                   >
                 </li>
                 <li>
-                  <a href="blogs.html" aria-label="الانتقال إلى صفحة المدونة"
+                  <a
+                    href="blogs.html"
+                    class="active"
+                    aria-label="الانتقال إلى صفحة المدونة"
                     >المدونة</a
                   >
                 </li>
@@ -512,7 +450,6 @@
                 <li>
                   <a
                     href="common-que.html"
-                    class="active"
                     aria-label="الانتقال إلى صفحة الأسئلة الشائعة"
                     >الأسئلة الشائعة</a
                   >
@@ -589,10 +526,10 @@
 
     <!-- bootstrap script -->
     <script src="js/bootstrap.min.js"></script>
-    
+
     <!-- nice select script -->
     <script src="js/jquery.nice-select.min.js"></script>
-    
+
     <!-- fancybox script -->
     <script src="js/jquery.fancybox.min.js"></script>
 

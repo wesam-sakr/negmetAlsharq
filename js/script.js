@@ -1,22 +1,26 @@
-var bodyDir = $("body").css("direction");
-console.log(bodyDir);
-var dirAr;
-if (bodyDir == "rtl") {
-  dirAr = true;
-} else {
-  dirAr = false;
-}
-
-
-
 $(document).ready(function () {
+  // تحديد لغة الموقع
+  var bodyDir = $("body").css("direction");
+  console.log(bodyDir);
+  var dirAr;
+  if (bodyDir == "rtl") {
+    dirAr = true;
+  } else {
+    dirAr = false;
+  }
   // إزالة الـ Loader بعد تحميل الموقع
   window.addEventListener("load", function () {
     setTimeout(() => {
       document.getElementById('lottie-loader').style.display = 'none';
     }, 1000); // تأخير 1 ثانية لإزالة الـ Loader
   });
+
+   // Scroll to the top of the page
+   window.addEventListener('scroll', () => {
+    document.getElementById('scrollUp').style.display = window.scrollY > 300 ? 'block' : 'none';
+  });
   
+  // 
   $("#filter").click(function () {
     $(".filter").toggleClass("filter-toggle");
   });
@@ -122,7 +126,7 @@ $(document).ready(function () {
         items: 1.3,
       },
       600: {
-        items: 2,
+        items: 2.3,
       },
       992: {
         items: 3.3,
@@ -131,32 +135,7 @@ $(document).ready(function () {
   });
 });
 
-$(function () {
-  $("#your-rate").rateYo({
-    starWidth: "15px",
-    ratedFill: "#FFC107",
-    rating: 0,
-    fullStar: true,
-    rtl: dirAr,
-  });
-}).on("rateyo.change", function (e, data) {
-  var rating = data.rating;
-  $("#your-rate").next().val(rating);
-});
 
-var navbar = document.getElementsByClassName("main-nav");
-var sticky = navbar[0].offsetHeight + 61.36;
-
-// make nav bar static on scroll
-if ($("#home").length > 0) {
-  window.addEventListener("scroll", function () {
-    if (this.document.documentElement.scrollTop >= sticky) {
-      $(navbar).css("position", "fixed");
-    } else {
-      $(navbar).css("position", "sticky");
-    }
-  });
-}
 
 // counter
 window.addEventListener("scroll", function () {

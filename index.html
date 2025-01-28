@@ -8,7 +8,13 @@
     <link rel="icon" href="images/fav.svg" />
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Bootstrap link  -->
     <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
@@ -18,17 +24,35 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
 
-    <!-- rateyo link -->
-    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
-
     <!-- nice select link -->
     <link rel="stylesheet" href="css/nice-select.css" />
+    
+    <!-- fancybox link -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <!-- go to up -->
+    <div class="fixed-icon" id="scrollUp">
+      <a href="#" aria-label="go to page up">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- fixed snapchat icon -->
+    <div class="fixed-icon snapchat">
+      <a
+        href=""
+        target="_blank"
+        aria-label="الذهاب الى حسابنا عبر سناب شات"
+      >
+        <i class="fa-brands fa-snapchat fa-shake"></i>
+      </a>
+    </div>
+    
     <div class="header-hero-wrapper">
       <header>
         <!-- 
@@ -93,7 +117,7 @@
               id="navbarSupportedContent"
             >
               <!-- روابط القائمة -->
-              <ul class="navbar-nav gap-md-4 mb-0">
+              <ul class="navbar-nav gap-lg-4 mb-0">
                 <li class="nav-item">
                   <a
                     class="nav-link active"
@@ -112,18 +136,18 @@
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link"
-                    href="services.html"
-                    aria-label="الذهاب إلى صفحة الخدمات"
-                    >خدماتنا</a
+                  class="nav-link"
+                  href="estates.html"
+                  aria-label="الذهاب إلى صفحة العقارات"
+                  >العقارات</a
                   >
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link"
-                    href="estates.html"
-                    aria-label="الذهاب إلى صفحة العقارات"
-                    >العقارات</a
+                    href="blogs.html"
+                    aria-label="الذهاب إلى صفحة المدونة"
+                    >المدونة</a
                   >
                 </li>
                 <li class="nav-item">
@@ -196,6 +220,7 @@
                       class="d-none"
                       name="purpose"
                       id="buy"
+                      checked
                     />
                     <label for="buy" class="place">
                       <div class="icon">
@@ -292,10 +317,10 @@
     <section class="about-us py-5">
     <div class="container-fluid">
       <div class="row align-items-center gy-3 gx-md-5">
-        <div class="col-md-6">
+        <div class="col-md-9 col-lg-6">
           <img src="images/about.png" class="w-100" alt="">
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-6">
           <div class="section-title pb-2">
             <h2 class="secName fw-semibold fs-4">من نحن؟</h2>
             <p class="secDesc fw-bold secondry fs-3">اكتشف عالم المشاريع العقارية المميزة مع نجمة الشرق</p>
@@ -309,7 +334,7 @@
             </p>
           </div>
           <div class="counters">
-            <div class="d-flex text-center gap-5 align-items-center gy-4 py-4">
+            <div class="d-flex text-center gap-4 gap-md-5 align-items-center gy-4 py-4">
               <!-- عميل راضي -->
               <div class="count-txt">
                 <p class="counter" data-target="550">0</p>
@@ -975,7 +1000,7 @@
     <section class="que py-5">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-md-7 col-lg-8">
             <div class="section-title pb-4">
               <h2 class="secName fw-semibold fs-4">اكتشف المزيد</h2>
               <p class="secDesc fw-bold secondry fs-3 lh-sm col-md-8">
@@ -1169,7 +1194,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-5 col-lg-4">
             <div class="ask-us bg-card p-4 text-center">
               <img
                 src="images/que.svg"
@@ -1235,7 +1260,7 @@
             </div>
     
             <!-- خريطة الموقع -->
-            <div class="col-6 col-md-4 col-lg-auto mt-3">
+            <div class="col-6 col-md-3 col-lg-auto mt-3">
               <h4>خريطة الموقع</h4>
               <ul class="list-unstyled">
                 <li><a href="index.html" class="active" aria-label="الانتقال إلى الصفحة الرئيسية">الرئيسية</a></li>
@@ -1246,7 +1271,7 @@
             </div>
     
             <!-- روابط سريعة -->
-            <div class="col-6 col-md-4 col-lg-auto mt-3">
+            <div class="col-6 col-md-3 col-lg-auto mt-3">
               <h4>روابط سريعة</h4>
               <ul class="list-unstyled">
                 <li><a href="policy.html" aria-label="الانتقال إلى صفحة سياسة الخصوصية">سياسة الخصوصية</a></li>
@@ -1257,7 +1282,7 @@
             </div>
     
             <!-- الاشتراك وتحديثات العقارات -->
-            <div class="col-12 col-lg-3 mt-3">
+            <div class="col-12 col-md-5 col-lg-3 mt-3">
               <h4>اشترك لتلقي تحديثات العقارات</h4>
               <form action="">
                 <div class="input-group my-3">
@@ -1288,20 +1313,17 @@
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
-    <!-- lottiefiles script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
-
     <!-- owl-carousel script -->
     <script src="js/owl.carousel.min.js"></script>
 
     <!-- bootstrap script -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- rateyo script -->
-    <script src="js/jquery.rateyo.min.js"></script>
-
+    
     <!-- nice select script -->
     <script src="js/jquery.nice-select.min.js"></script>
+    
+    <!-- fancybox script -->
+    <script src="js/jquery.fancybox.min.js"></script>
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>

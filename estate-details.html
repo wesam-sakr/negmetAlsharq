@@ -24,17 +24,31 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
 
-    <!-- rateyo link -->
-    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
-
     <!-- nice select link -->
     <link rel="stylesheet" href="css/nice-select.css" />
+    
+    <!-- fancybox link -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <!-- go to up -->
+    <div class="fixed-icon" id="scrollUp">
+      <a href="#" aria-label="go to page up">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- fixed snapchat icon -->
+    <div class="fixed-icon snapchat">
+      <a href="" target="_blank" aria-label="الذهاب الى حسابنا عبر سناب شات">
+        <i class="fa-brands fa-snapchat fa-shake"></i>
+      </a>
+    </div>
+
     <header>
       <!-- الشريط العلوي -->
       <nav class="navbar top-nav p-0">
@@ -94,7 +108,7 @@
             id="navbarSupportedContent"
           >
             <!-- روابط القائمة -->
-            <ul class="navbar-nav gap-md-4 mb-0">
+            <ul class="navbar-nav gap-lg-4 mb-0">
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -113,18 +127,18 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
-                  href="services.html"
-                  aria-label="الذهاب إلى صفحة الخدمات"
-                  >خدماتنا</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
                   class="nav-link active"
                   href="estates.html"
                   aria-label="الذهاب إلى صفحة العقارات"
                   >العقارات</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="blogs.html"
+                  aria-label="الذهاب إلى صفحة المدونة"
+                  >المدونة</a
                 >
               </li>
               <li class="nav-item">
@@ -181,57 +195,131 @@
     <!-- section -->
     <section class="estates my-5 pb-5">
       <div class="container-fluid">
-        <div class="main-section d-flex gap-3">
-          <div class="main-side col-8">
-            <div class="proj-img">
-              <div class="gallery">
-                <div class="gallery-container">
-                  <div
-                    class="img photo aos-init aos-animate"
-                    data-aos="flip-up"
-                    data-aos-duration="1000"
+        <div class="main-section row gy-3">
+          <div class="main-side col-md-8">
+            <div class="gallery">
+              <div class="gallery-container">
+                <div
+                  class="img photo aos-init aos-animate"
+                  data-aos="flip-up"
+                  data-aos-duration="1000"
+                >
+                  <a
+                    data-fancybox="gallary"
+                    href="images/11-beautiful-european-squares-to-visit-1.png"
                   >
-                    <a data-fancybox="gallary" href="images/11-beautiful-european-squares-to-visit-1.png">
-                      <img src="images/11-beautiful-european-squares-to-visit-1.png" />
-                    </a>
-                  </div>
-                  <div
-                    class="img photo aos-init aos-animate"
-                    data-aos="flip-up"
-                    data-aos-duration="1000"
+                    <img
+                      src="images/11-beautiful-european-squares-to-visit-1.png"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="img photo aos-init aos-animate"
+                  data-aos="flip-up"
+                  data-aos-duration="1000"
+                >
+                  <a data-fancybox="gallary" href="images/Dubai-Marina-1.png">
+                    <img src="images/Dubai-Marina-1.png" />
+                  </a>
+                </div>
+                <div
+                  class="img photo aos-init aos-animate"
+                  data-aos="flip-up"
+                  data-aos-duration="1000"
+                >
+                  <a
+                    data-fancybox="gallary"
+                    href="images/c550ebe89736dfd44677db1f95e8029b.png"
                   >
-                    <a data-fancybox="gallary" href="images/Dubai-Marina-1.png">
-                      <img src="images/Dubai-Marina-1.png" />
-                    </a>
+                    <img src="images/c550ebe89736dfd44677db1f95e8029b.png" />
+                  </a>
+                </div>
+                <div
+                  class="img photo aos-init aos-animate"
+                  data-aos="flip-up"
+                  data-aos-duration="1000"
+                >
+                  <a data-fancybox="gallary" href="images/background.png">
+                    <img src="images/background.png" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="our-estates">
+              <div class="card">
+                <!-- estate description -->
+                <div class="card-body mt-4 py-4 gap-3 m-0 bg-white shadow">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-title fw-bold fs-4">
+                      الوصف
+                    </p>
+                    <!-- share -->
+                    <div class="share-estate d-flex gap-2 align-items-center justify-content-between">
+                      <i class="bi bi-share"></i>
+                      <p>
+                        شارك عبر
+                      </p>
+                      <div class="share">
+                        <ul class="social d-flex gap-2 m-0">
+                          <li>
+                            <a href="" target="_blank" aria-label="مشاركة العقار عبر سناب شات">
+                              <i class="fa-brands fa-snapchat"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" target="_blank" aria-label="مشاركة العقار عبر فيسبوك">
+                              <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="" target="_blank" aria-label="مشاركة العقار عبر تويتر">
+                              <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
                   </div>
-                  <div
-                    class="img photo aos-init aos-animate"
-                    data-aos="flip-up"
-                    data-aos-duration="1000"
-                  >
-                    <a
-                      data-fancybox="gallary"
-                      href="images/c550ebe89736dfd44677db1f95e8029b.png"
-                    >
-                      <img
-                        src="images/c550ebe89736dfd44677db1f95e8029b.png"
-                      />
-                    </a>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="estate-date">
+                      <i class="bi bi-calendar"></i>
+                      تاريخ النشر 02/30/2024
+                    </p>
+                    <div class="d-flex gap-1 align-items-center">
+                      <i class="bi bi-eye"></i>
+                      <p>عدد المشاهدات 500 مشاهدة</p>
+                    </div>
                   </div>
-                  <div
-                    class="img photo aos-init aos-animate"
-                    data-aos="flip-up"
-                    data-aos-duration="1000"
-                  >
-                    <a data-fancybox="gallary" href="images/background.png">
-                      <img src="images/background.png" />
-                    </a>
-                  </div>
+                  <p class="text-muted">
+                    هناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحةهناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحةهناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحةهناك حقيقة مثبتة منذ زمن طويل وهي أن هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوىهناك حقيقة مثبتة منذ زمن طويل وهي أن الم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحةحتوى المقروء لصفحة المقروء لصفحة
+                  </p>
+                </div>
+
+                <!-- estate feature -->
+                <div class="card-body mt-4 pt-4 p-0 gap-3 m-0 bg-white shadow">
+                  <p class="card-title fw-bold px-3 fs-4">
+                    الخصائص
+                  </p>
+                  <table class="table table-striped m-0">
+                    <tr>
+                      <th>رقم التعريف</th>
+                      <td>56985698</td>
+                    </tr>
+                    <tr>
+                      <th>رقم الترخيص</th>
+                      <td>569859856698</td>
+                    </tr>
+                    <tr>
+                      <th>رقم الملكية</th>
+                      <td>5698598</td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
           </div>
-          <div class="sticky-side col-4">
+          <div class="sticky-side col-md-4">
             <div class="our-estates">
               <div class="card">
                 <!-- estate info -->
@@ -264,66 +352,19 @@
                     >
                   </p>
                 </div>
-                <div class="card-footer">whats</div>
+                <div class="card-footer p-0 mt-4 d-flex gap-2">
+                  <a href="" class="main-btn">اتصل بنا</a>
+                  <a href="" class="main-outline-btn text-center flex-grow-1">
+                    <i class="fa-brands fa-whatsapp me-2"></i>
+                    تواصل عبر واتساب
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <!-- <div class="clear"></div> -->
         </div>
       </div>
     </section>
-
-    <style>
-      .sticky-side {
-        display: inline-block;
-        position: sticky;
-        top: 10px;
-        height: fit-content;
-      }
-      .main-side {
-        display: inline-block;
-        vertical-align: top;
-        /* height: 700px;
-        background: #ddd; */
-      }
-      .gallery .gallery-container {
-        display: grid;
-        grid-template-columns: repeat(12, minmax(0, 1fr));
-        grid-auto-rows: repeat(3, 1fr);
-        gap: 0.85rem;
-      }
-
-      .gallery .gallery-container .img {
-        border-radius: 2rem;
-        grid-column: span 3;
-        grid-row: span 1;
-      }
-      .gallery .gallery-container .img:nth-child(-n + 5) {
-        grid-column: span 3;
-      }
-
-      .gallery .gallery-container .img img {
-        -o-object-fit: cover;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        border-radius: var(--card-raduis);
-        -webkit-border-radius: var(--card-raduis);
-        -moz-border-radius: var(--card-raduis);
-        -ms-border-radius: var(--card-raduis);
-        -o-border-radius: var(--card-raduis);
-      }
-
-      .gallery .gallery-container .img:nth-child(2) {
-        grid-row: span 3;
-        grid-column: span 9;
-        max-height: unset;
-      }
-
-      /* .gallery .gallery-container .img:nth-child(2) img {
-        aspect-ratio: 9 / 6;
-      } */
-    </style>
 
     <!-- special estates section -->
     <section class="our-estates py-5">
@@ -576,7 +617,7 @@
             </div>
 
             <!-- خريطة الموقع -->
-            <div class="col-6 col-md-4 col-lg-auto mt-3">
+            <div class="col-6 col-md-3 col-lg-auto mt-3">
               <h4>خريطة الموقع</h4>
               <ul class="list-unstyled">
                 <li>
@@ -606,7 +647,7 @@
             </div>
 
             <!-- روابط سريعة -->
-            <div class="col-6 col-md-4 col-lg-auto mt-3">
+            <div class="col-6 col-md-3 col-lg-auto mt-3">
               <h4>روابط سريعة</h4>
               <ul class="list-unstyled">
                 <li>
@@ -641,7 +682,7 @@
             </div>
 
             <!-- الاشتراك وتحديثات العقارات -->
-            <div class="col-12 col-lg-3 mt-3">
+            <div class="col-12 col-md-5 col-lg-3 mt-3">
               <h4>اشترك لتلقي تحديثات العقارات</h4>
               <form action="">
                 <div class="input-group my-3">
@@ -690,20 +731,17 @@
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
-    <!-- lottiefiles script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
-
     <!-- owl-carousel script -->
     <script src="js/owl.carousel.min.js"></script>
 
     <!-- bootstrap script -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- rateyo script -->
-    <script src="js/jquery.rateyo.min.js"></script>
-
+    
     <!-- nice select script -->
     <script src="js/jquery.nice-select.min.js"></script>
+    
+    <!-- fancybox script -->
+    <script src="js/jquery.fancybox.min.js"></script>
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>

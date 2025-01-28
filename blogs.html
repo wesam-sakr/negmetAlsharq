@@ -24,17 +24,31 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
 
-    <!-- rateyo link -->
-    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
-
     <!-- nice select link -->
     <link rel="stylesheet" href="css/nice-select.css" />
+
+    <!-- fancybox link -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
+    <!-- go to up -->
+    <div class="fixed-icon" id="scrollUp">
+      <a href="#" aria-label="go to page up">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- fixed snapchat icon -->
+    <div class="fixed-icon snapchat">
+      <a href="" target="_blank" aria-label="الذهاب الى حسابنا عبر سناب شات">
+        <i class="fa-brands fa-snapchat fa-shake"></i>
+      </a>
+    </div>
+
     <header>
       <!-- الشريط العلوي -->
       <nav class="navbar top-nav p-0">
@@ -42,9 +56,7 @@
           <div
             class="helper-links w-100 d-flex align-items-center justify-content-between py-2"
           >
-            <ul
-              class="helper-pages m-0 d-flex align-items-center"
-            >
+            <ul class="helper-pages m-0 d-flex align-items-center">
               <li class="d-md-block d-none">
                 <a href="help.html" aria-label="الذهاب إلى الأسئلة الشائعة">
                   <span>الأسئلة الشائعة</span>
@@ -62,9 +74,7 @@
                 </a>
               </li>
             </ul>
-            <ul
-              class="helper-pages m-0 d-flex align-items-center"
-            >
+            <ul class="helper-pages m-0 d-flex align-items-center">
               <li>
                 <a href="register.html" aria-label="إنشاء حساب جديد">
                   <i class="bi bi-box-arrow-in-left"></i>
@@ -98,7 +108,7 @@
             id="navbarSupportedContent"
           >
             <!-- روابط القائمة -->
-            <ul class="navbar-nav gap-md-4 mb-0">
+            <ul class="navbar-nav gap-lg-4 mb-0">
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -118,17 +128,17 @@
               <li class="nav-item">
                 <a
                   class="nav-link"
-                  href="services.html"
-                  aria-label="الذهاب إلى صفحة الخدمات"
-                  >خدماتنا</a
+                  href="estates.html"
+                  aria-label="الذهاب إلى صفحة العقارات"
+                  >العقارات</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
-                  href="estates.html"
-                  aria-label="الذهاب إلى صفحة العقارات"
-                  >العقارات</a
+                  class="nav-link active"
+                  href="blogs.html"
+                  aria-label="الذهاب إلى صفحة المدونة"
+                  >المدونة</a
                 >
               </li>
               <li class="nav-item">
@@ -182,10 +192,11 @@
       </div>
     </section>
 
-       <!-- blogs section -->
-       <section class="blogs py-5">
-        <div class="container-fluid">
-          <div class="row row-cols-lg-3 row-cols-md-6">
+    <!-- blogs section -->
+    <section class="blogs py-5">
+      <div class="container-fluid">
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1">
+          <div class="col">
             <div class="card">
               <!-- blog link -->
               <a
@@ -210,166 +221,224 @@
                   </p>
                 </div>
                 <p class="blog-description cut-text card-text text-muted">
-                  الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال، سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك الاستثمارية.
+                  الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات
+                  أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا
+                  المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال،
+                  سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك
+                  الاستثمارية.
                 </p>
-                <a href="blog-details.html"
-                aria-label="الانتقال الى مقال بعنوان اسم المقال" class="more main fs-5">المزيد</a>
-              </div>
-            </div>
-            <div class="card">
-              <!-- blog link -->
-              <a
-                href="blog-details.html"
-                aria-label="الانتقال الى مقال بعنوان اسم المقال"
-                class="link"
-              ></a>
-              <!-- blog img -->
-              <div class="blog-img">
-                <img
-                  src="images/build.png"
-                  class="card-img-top"
-                  alt="blog name"
-                />
-              </div>
-              <!-- blog info -->
-              <div class="card-body px-0">
-                <span class="secondry fw-bold">5 سبتمبر 2022</span>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p class="blog-name cut-text card-title fw-semibold fs-4">
-                    استكشف آخر الاتجاهات والتطورات في سوق العقارات
-                  </p>
-                </div>
-                <p class="blog-description cut-text card-text text-muted">
-                  الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال، سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك الاستثمارية.
-                </p>
-                <a href="blog-details.html"
-                aria-label="الانتقال الى مقال بعنوان اسم المقال" class="more main fs-5">المزيد</a>
-              </div>
-            </div>
-            <div class="card">
-              <!-- blog link -->
-              <a
-                href="blog-details.html"
-                aria-label="الانتقال الى مقال بعنوان اسم المقال"
-                class="link"
-              ></a>
-              <!-- blog img -->
-              <div class="blog-img">
-                <img
-                  src="images/build.png"
-                  class="card-img-top"
-                  alt="blog name"
-                />
-              </div>
-              <!-- blog info -->
-              <div class="card-body px-0">
-                <span class="secondry fw-bold">5 سبتمبر 2022</span>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p class="blog-name cut-text card-title fw-semibold fs-4">
-                    استكشف آخر الاتجاهات والتطورات في سوق العقارات
-                  </p>
-                </div>
-                <p class="blog-description cut-text card-text text-muted">
-                  الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال، سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك الاستثمارية.
-                </p>
-                <a href="blog-details.html"
-                aria-label="الانتقال الى مقال بعنوان اسم المقال" class="more main fs-5">المزيد</a>
-              </div>
-            </div>
-            <div class="card">
-              <!-- blog link -->
-              <a
-                href="blog-details.html"
-                aria-label="الانتقال الى مقال بعنوان اسم المقال"
-                class="link"
-              ></a>
-              <!-- blog img -->
-              <div class="blog-img">
-                <img
-                  src="images/build.png"
-                  class="card-img-top"
-                  alt="blog name"
-                />
-              </div>
-              <!-- blog info -->
-              <div class="card-body px-0">
-                <span class="secondry fw-bold">5 سبتمبر 2022</span>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p class="blog-name cut-text card-title fw-semibold fs-4">
-                    استكشف آخر الاتجاهات والتطورات في سوق العقارات
-                  </p>
-                </div>
-                <p class="blog-description cut-text card-text text-muted">
-                  الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال، سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك الاستثمارية.
-                </p>
-                <a href="blog-details.html"
-                aria-label="الانتقال الى مقال بعنوان اسم المقال" class="more main fs-5">المزيد</a>
-              </div>
-            </div>
-            <div class="card">
-              <!-- blog link -->
-              <a
-                href="blog-details.html"
-                aria-label="الانتقال الى مقال بعنوان اسم المقال"
-                class="link"
-              ></a>
-              <!-- blog img -->
-              <div class="blog-img">
-                <img
-                  src="images/build.png"
-                  class="card-img-top"
-                  alt="blog name"
-                />
-              </div>
-              <!-- blog info -->
-              <div class="card-body px-0">
-                <span class="secondry fw-bold">5 سبتمبر 2022</span>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p class="blog-name cut-text card-title fw-semibold fs-4">
-                    استكشف آخر الاتجاهات والتطورات في سوق العقارات
-                  </p>
-                </div>
-                <p class="blog-description cut-text card-text text-muted">
-                  الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال، سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك الاستثمارية.
-                </p>
-                <a href="blog-details.html"
-                aria-label="الانتقال الى مقال بعنوان اسم المقال" class="more main fs-5">المزيد</a>
-              </div>
-            </div>
-            <div class="card">
-              <!-- blog link -->
-              <a
-                href="blog-details.html"
-                aria-label="الانتقال الى مقال بعنوان اسم المقال"
-                class="link"
-              ></a>
-              <!-- blog img -->
-              <div class="blog-img">
-                <img
-                  src="images/build.png"
-                  class="card-img-top"
-                  alt="blog name"
-                />
-              </div>
-              <!-- blog info -->
-              <div class="card-body px-0">
-                <span class="secondry fw-bold">5 سبتمبر 2022</span>
-                <div class="d-flex justify-content-between align-items-center">
-                  <p class="blog-name cut-text card-title fw-semibold fs-4">
-                    استكشف آخر الاتجاهات والتطورات في سوق العقارات
-                  </p>
-                </div>
-                <p class="blog-description cut-text card-text text-muted">
-                  الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال، سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك الاستثمارية.
-                </p>
-                <a href="blog-details.html"
-                aria-label="الانتقال الى مقال بعنوان اسم المقال" class="more main fs-5">المزيد</a>
+                <a
+                  href="blog-details.html"
+                  aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                  class="more main fs-5"
+                  >المزيد</a
+                >
               </div>
             </div>
           </div>
-          
+          <div class="col">
+            <div class="card">
+              <!-- blog link -->
+              <a
+                href="blog-details.html"
+                aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                class="link"
+              ></a>
+              <!-- blog img -->
+              <div class="blog-img">
+                <img
+                  src="images/build.png"
+                  class="card-img-top"
+                  alt="blog name"
+                />
+              </div>
+              <!-- blog info -->
+              <div class="card-body px-0">
+                <span class="secondry fw-bold">5 سبتمبر 2022</span>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="blog-name cut-text card-title fw-semibold fs-4">
+                    استكشف آخر الاتجاهات والتطورات في سوق العقارات
+                  </p>
+                </div>
+                <p class="blog-description cut-text card-text text-muted">
+                  الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات
+                  أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا
+                  المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال،
+                  سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك
+                  الاستثمارية.
+                </p>
+                <a
+                  href="blog-details.html"
+                  aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                  class="more main fs-5"
+                  >المزيد</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <!-- blog link -->
+              <a
+                href="blog-details.html"
+                aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                class="link"
+              ></a>
+              <!-- blog img -->
+              <div class="blog-img">
+                <img
+                  src="images/build.png"
+                  class="card-img-top"
+                  alt="blog name"
+                />
+              </div>
+              <!-- blog info -->
+              <div class="card-body px-0">
+                <span class="secondry fw-bold">5 سبتمبر 2022</span>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="blog-name cut-text card-title fw-semibold fs-4">
+                    استكشف آخر الاتجاهات والتطورات في سوق العقارات
+                  </p>
+                </div>
+                <p class="blog-description cut-text card-text text-muted">
+                  الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات
+                  أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا
+                  المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال،
+                  سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك
+                  الاستثمارية.
+                </p>
+                <a
+                  href="blog-details.html"
+                  aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                  class="more main fs-5"
+                  >المزيد</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <!-- blog link -->
+              <a
+                href="blog-details.html"
+                aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                class="link"
+              ></a>
+              <!-- blog img -->
+              <div class="blog-img">
+                <img
+                  src="images/build.png"
+                  class="card-img-top"
+                  alt="blog name"
+                />
+              </div>
+              <!-- blog info -->
+              <div class="card-body px-0">
+                <span class="secondry fw-bold">5 سبتمبر 2022</span>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="blog-name cut-text card-title fw-semibold fs-4">
+                    استكشف آخر الاتجاهات والتطورات في سوق العقارات
+                  </p>
+                </div>
+                <p class="blog-description cut-text card-text text-muted">
+                  الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات
+                  أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا
+                  المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال،
+                  سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك
+                  الاستثمارية.
+                </p>
+                <a
+                  href="blog-details.html"
+                  aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                  class="more main fs-5"
+                  >المزيد</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <!-- blog link -->
+              <a
+                href="blog-details.html"
+                aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                class="link"
+              ></a>
+              <!-- blog img -->
+              <div class="blog-img">
+                <img
+                  src="images/build.png"
+                  class="card-img-top"
+                  alt="blog name"
+                />
+              </div>
+              <!-- blog info -->
+              <div class="card-body px-0">
+                <span class="secondry fw-bold">5 سبتمبر 2022</span>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="blog-name cut-text card-title fw-semibold fs-4">
+                    استكشف آخر الاتجاهات والتطورات في سوق العقارات
+                  </p>
+                </div>
+                <p class="blog-description cut-text card-text text-muted">
+                  الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات
+                  أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا
+                  المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال،
+                  سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك
+                  الاستثمارية.
+                </p>
+                <a
+                  href="blog-details.html"
+                  aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                  class="more main fs-5"
+                  >المزيد</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <!-- blog link -->
+              <a
+                href="blog-details.html"
+                aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                class="link"
+              ></a>
+              <!-- blog img -->
+              <div class="blog-img">
+                <img
+                  src="images/build.png"
+                  class="card-img-top"
+                  alt="blog name"
+                />
+              </div>
+              <!-- blog info -->
+              <div class="card-body px-0">
+                <span class="secondry fw-bold">5 سبتمبر 2022</span>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="blog-name cut-text card-title fw-semibold fs-4">
+                    استكشف آخر الاتجاهات والتطورات في سوق العقارات
+                  </p>
+                </div>
+                <p class="blog-description cut-text card-text text-muted">
+                  الاستثمار في العقارات يُعتبر واحدًا من أكثر أنواع الاستثمارات
+                  أمانًا وربحيةً على المدى الطويل. ومع ذلك، لتحقيق النجاح في هذا
+                  المجال، يجب اتباع نهج مدروس واستراتيجيات فعالة. في هذا المقال،
+                  سنقدم لك نصائح عملية تساعدك على اتخاذ قرارات مستنيرة في رحلتك
+                  الاستثمارية.
+                </p>
+                <a
+                  href="blog-details.html"
+                  aria-label="الانتقال الى مقال بعنوان اسم المقال"
+                  class="more main fs-5"
+                  >المزيد</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
     <!-- footer section -->
     <footer>
@@ -419,13 +488,11 @@
             </div>
 
             <!-- خريطة الموقع -->
-            <div class="col-6 col-md-4 col-lg-auto mt-3">
+            <div class="col-6 col-md-3 col-lg-auto mt-3">
               <h4>خريطة الموقع</h4>
               <ul class="list-unstyled">
                 <li>
-                  <a
-                    href="index.html"
-                    aria-label="الانتقال إلى الصفحة الرئيسية"
+                  <a href="index.html" aria-label="الانتقال إلى الصفحة الرئيسية"
                     >الرئيسية</a
                   >
                 </li>
@@ -440,7 +507,10 @@
                   >
                 </li>
                 <li>
-                  <a href="blogs.html" class="active" aria-label="الانتقال إلى صفحة المدونة"
+                  <a
+                    href="blogs.html"
+                    class="active"
+                    aria-label="الانتقال إلى صفحة المدونة"
                     >المدونة</a
                   >
                 </li>
@@ -448,7 +518,7 @@
             </div>
 
             <!-- روابط سريعة -->
-            <div class="col-6 col-md-4 col-lg-auto mt-3">
+            <div class="col-6 col-md-3 col-lg-auto mt-3">
               <h4>روابط سريعة</h4>
               <ul class="list-unstyled">
                 <li>
@@ -483,7 +553,7 @@
             </div>
 
             <!-- الاشتراك وتحديثات العقارات -->
-            <div class="col-12 col-lg-3 mt-3">
+            <div class="col-12 col-md-5 col-lg-3 mt-3">
               <h4>اشترك لتلقي تحديثات العقارات</h4>
               <form action="">
                 <div class="input-group my-3">
@@ -532,20 +602,17 @@
     <!-- jQuery script -->
     <script src="js/jquery-3.6.0.min.js"></script>
 
-    <!-- lottiefiles script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
-
     <!-- owl-carousel script -->
     <script src="js/owl.carousel.min.js"></script>
 
     <!-- bootstrap script -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- rateyo script -->
-    <script src="js/jquery.rateyo.min.js"></script>
-
     <!-- nice select script -->
     <script src="js/jquery.nice-select.min.js"></script>
+
+    <!-- fancybox script -->
+    <script src="js/jquery.fancybox.min.js"></script>
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
