@@ -119,7 +119,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link"
                   href="about.html"
                   aria-label="الذهاب إلى صفحة من نحن"
                   >من نحن</a
@@ -154,13 +154,13 @@
             <div class="search-box">
               <form action="" method="GET">
                 <input
-                    type="search"
-                    name="reference_number"
-                    class="form-control"
-                    placeholder="بحث برقم تعريف العقار"
-                    aria-label="بحث برقم تعريف العقار"
-                    required
-                  />
+                  type="search"
+                  name="reference_number"
+                  class="form-control"
+                  placeholder="بحث برقم تعريف العقار"
+                  aria-label="بحث برقم تعريف العقار"
+                  required
+                />
                 <button type="submit">
                   <i class="bi bi-search"></i>
                 </button>
@@ -188,139 +188,88 @@
         <div class="d-flex py-4 align-items-center breadcrumb border-bottom">
           <a href="index.html" class="fw-semibold fs-5"> الرئيسية</a>
           <i class="fa-solid fa-angles-left mx-2 text-muted"></i>
-          <p class="fw-semibold secondry fs-5 mb-0">من نحن</p>
+          <p class="fw-semibold secondry fs-5 mb-0">تسجيل الدخول</p>
         </div>
       </div>
     </section>
 
-    <!-- about us -->
-    <section class="about-us py-5">
+    <!-- login  -->
+    <section class="login py-5">
       <div class="container-fluid">
-        <div class="row align-items-center gy-3 gx-md-5">
-          <div class="col-md-9 col-lg-6">
-            <img src="images/about.png" class="w-100" alt="" />
-          </div>
-          <div class="col-lg-6">
-            <div class="section-title pb-2">
-              <h2 class="secName fw-semibold fs-4">من نحن؟</h2>
-              <p class="secDesc fw-bold secondry fs-3">
-                اكتشف عالم المشاريع العقارية المميزة مع نجمة الشرق
-              </p>
-            </div>
-            <div class="about-txt d-flex flex-column gap-2">
-              <p>
-                في نجمة الشرق للعقارات، نسعى لنكون الوجهة الأولى لكل من يبحث عن
-                تميز في سوق العقارات. تأسست شركتنا على أسس متينة من الثقة
-                والشفافية، لتقديم خدمات عقارية متكاملة تلبي احتياجات العملاء
-                بكافة تطلعاتهم
-              </p>
-              <p>
-                نمتلك فريقًا من الخبراء المتخصصين الذين يعملون بجد لتوفير أفضل
-                الفرص العقارية، سواء كنت تبحث عن شراء، بيع، أو تأجير عقار. نسعى
-                دائمًا لتقديم تجربة مميزة لعملائنا من خلال توفير عقارات متنوعة
-                تناسب جميع الأذواق، مع خدمات استشارية تساعدك في اتخاذ القرار
-                الأفضل
-              </p>
-              <p>
-                في "نجمة الشرق"، نؤمن بأن نجاحنا ينبع من قدرتنا على تحقيق رضا
-                عملائنا وتقديم حلول عقارية مبتكرة تناسب السوق المتغير باستمرار.
-                نحن هنا لنساعدك على تحقيق أحلامك في تملك أو استثمار عقار يلبي
-                طموحاتك.
-              </p>
-              <p class="main fw-semibold">
-                انضم إلينا اليوم واكتشف كيف يمكننا أن نكون شريكك الموثوق في كل
-                خطوة على طريق نجاحك العقاري
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- counter -->
-    <section id="counters">
-      <div class="container-fluid">
-        <div
-          class="counters position-relative"
-          style="background: url('images/counter.png')"
-        >
-          <div class="link" style="background: rgba(var(--mainOp), 0.62)"></div>
-          <div class="position-relative z-2">
-            <div class="section-title text-center pb-4">
-              <h2 class="secName fw-medium fs-5">أرقامنا</h2>
-              <p class="secDesc fw-bold fs-4 mb-3">إنجازاتنا تتحدث عنا</p>
-              <p class="col-lg-7 m-auto mb-3">
-                منذ تأسيسنا، حققنا العديد من النجاحات التي تعكس التزامنا بالجودة
-                والابتكار في مجال العقارات. نحن فخورون بتقديم خدمات عالية
-                المستوى لعملائنا، حيث ساهمنا في تطوير مشاريع عقارية مميزة في
-                أبرز المواقع. بفضل خبرتنا واحترافنا، أصبحنا من الشركات الرائدة
-                التي تلبي احتياجات السوق وتحقق رضا العملاء بشكل مستمر
-              </p>
-            </div>
-            <div class="row row-cols-3 text-center">
-              <!-- عميل راضي -->
-              <div class="count-txt">
-                <p class="counter" data-target="550">0</p>
-                <p class="fs-4 fw-medium">عميل راضي</p>
+        <div class="row align-items-center gy-3">
+          <div class="col-md-5 col-lg-6">
+            <h5 class="fw-bold fs-3 secondry mb-4">
+              <span>-</span> تسجيل دخول
+            </h5>
+            <form action="Profile.html">
+              <div class="input-group border mb-4">
+                <span class="input-group-text bg-white fs-4">
+                  <i class="bi bi-telephone"></i>
+                </span>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control ps-0"
+                    id="InputPhone"
+                    placeholder="رقم الجوال"
+                    required
+                  />
+                  <label for="InputPhone" class="ps-0">رقم الجوال *</label>
+                </div>
               </div>
-              <!-- سنوات الخبرة -->
-              <div class="count-txt count-border">
-                <p class="counter" data-target="10">0</p>
-                <p class="fs-4 fw-medium">سنوات الخبرة</p>
+              <div class="mb-4">
+                <div class="input-group border mb-2">
+                  <button
+                    type="button"
+                    class="input-group-text bg-white fs-4 pass"
+                    title="show pass"
+                    aria-label="اظهار كلمة المرور"
+                  >
+                    <i class="bi bi-lock"></i>
+                  </button>
+                  <div class="form-floating">
+                    <input
+                      type="password"
+                      class="form-control ps-0"
+                      id="InputPassword"
+                      placeholder="كلمة المرور"
+                      required
+                    />
+                    <label for="InputPassword" class="ps-0"
+                      >كلمة المرور *</label
+                    >
+                  </div>
+                </div>
+                <a
+                  href="forgot-pass.html"
+                  class="text-decoration-underline main"
+                  aria-label="هل نسيت كلمة المرور؟ الذهاب لاعادة التعيين"
+                >
+                  هل نسيت كلمة المرور؟
+                </a>
               </div>
-              <!-- مشروع ناجح -->
-              <div class="count-txt">
-                <p class="counter" data-target="50">0</p>
-                <p class="fs-4 fw-medium">مشروع ناجح</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- why us -->
-    <section class="about-us py-5">
-      <div class="container-fluid">
-        <div
-          class="row justify-content-between align-items-center gy-3 gx-md-5"
-        >
-          <div class="col-lg-6">
-            <div class="section-title pb-2">
-              <h2 class="secName fw-semibold fs-4">لماذا نحن ؟</h2>
-              <p class="secDesc fw-bold secondry fs-3">
-                استمتع بأفضل الفرص العقارية مع نجمة الشرق
+              <!-- ارسال -->
+              <button
+                type="submit"
+                class="btn main-btn px-5 py-2 mb-3"
+                aria-label="ارسال نموذج تسجيل الدخول "
+              >
+                دخول
+              </button>
+              <p class="fw-semibold fs-5">
+                ليس لديك حساب؟
+                <a
+                href="login.html"
+                class="main fw-bold px-1"
+                aria-label="الذهاب الى صفحة انشاء حساب جديد في حالة اذا لم يكن لديك حساب مسبق"
+                >
+                إنشاء حساب جديد
+                </a>
               </p>
-            </div>
-            <div class="about-txt d-flex flex-column gap-2">
-              <p>
-                نحن في "نجمة الشرق للعقارات" نتميز بتقديم خدمات عقارية مبتكرة
-                وموثوقة تلبي احتياجات عملائنا وتفوق توقعاتهم. بفضل خبرتنا
-                الطويلة في السوق، نقدم حلولاً عقارية شاملة تشمل البيع، الإيجار،
-                والاستثمار العقاري في أبرز المواقع في المملكة. نركز على الجودة
-                والشفافية في كل تعامل، مما جعلنا خياراً مفضلاً للعملاء الباحثين
-                عن الثقة والاحترافية في عالم العقارات. اخترنا أن نكون شريكك
-                الموثوق في تحقيق أهدافك العقارية
-              </p>
-            </div>
+            </form>
           </div>
-          <div class="col-lg-6">
-            <!-- <img src="images/about.png" class="w-100" alt="" /> -->
-            <div class="who-images position-relative">
-              <img
-                src="images/Dubai-Marina-1.png"
-                class="w-100 rounded-4"
-                alt=""
-              />
-              <div class="float-img rounded-4">
-                <img
-                  decoding="async"
-                  src="images/aboutt.png"
-                  class="rounded-4 w-100 h-100"
-                  alt=""
-                />
-              </div>
-            </div>
+          <div class="col-md-7 col-lg-6">
+            <img src="images/Login.svg" class="w-100" alt="" />
           </div>
         </div>
       </div>
@@ -360,10 +309,7 @@
                   >
                 </li>
                 <li>
-                  <a
-                    href="about.html"
-                    class="active"
-                    aria-label="الانتقال إلى صفحة من نحن"
+                  <a href="about.html" aria-label="الانتقال إلى صفحة من نحن"
                     >من نحن</a
                   >
                 </li>
@@ -419,9 +365,19 @@
             <div class="col-12 col-md-5 col-lg-3 mt-3">
               <h4>اشترك لتلقي تحديثات العقارات</h4>
               <form action="">
-                <div class="input-group border my-3">
-                  <input type="email" class="form-control border-0" placeholder="البريد الإلكتروني" aria-label="إدخال البريد الإلكتروني" required>
-                  <button type="submit" class="input-group-text btn-sm border-0 bg-white main fs-5" aria-label="إرسال البريد الإلكتروني">
+                <div class="input-group border mb-4">
+                  <input
+                    type="email"
+                    class="form-control border-0"
+                    placeholder="البريد الإلكتروني"
+                    aria-label="إدخال البريد الإلكتروني"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="input-group-text btn-sm border-0 bg-white main fs-5"
+                    aria-label="إرسال البريد الإلكتروني"
+                  >
                     إرسال
                   </button>
                 </div>

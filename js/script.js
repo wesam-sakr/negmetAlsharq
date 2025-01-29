@@ -1,25 +1,19 @@
+// تحديد لغة الموقع
+var bodyDir = $("body").css("direction");
+console.log(bodyDir);
+var dirAr;
+if (bodyDir == "rtl") {
+  dirAr = true;
+} else {
+  dirAr = false;
+}
 $(document).ready(function () {
-  // تحديد لغة الموقع
-  var bodyDir = $("body").css("direction");
-  console.log(bodyDir);
-  var dirAr;
-  if (bodyDir == "rtl") {
-    dirAr = true;
-  } else {
-    dirAr = false;
-  }
-  // إزالة الـ Loader بعد تحميل الموقع
-  window.addEventListener("load", function () {
-    setTimeout(() => {
-      document.getElementById('lottie-loader').style.display = 'none';
-    }, 1000); // تأخير 1 ثانية لإزالة الـ Loader
-  });
 
-   // Scroll to the top of the page
-   window.addEventListener('scroll', () => {
+  // Scroll to the top of the page
+  window.addEventListener('scroll', () => {
     document.getElementById('scrollUp').style.display = window.scrollY > 300 ? 'block' : 'none';
   });
-  
+
   // 
   $("#filter").click(function () {
     $(".filter").toggleClass("filter-toggle");
@@ -28,13 +22,18 @@ $(document).ready(function () {
     $(".filter").toggleClass("filter-toggle");
   });
 
+  $(".toggle-profile-nav").click(function () {
+    $(".profile-nav").toggleClass("show");
+  });
+  $(".close-profile-nav").click(function () {
+    $(".profile-nav").removeClass("show");
+  });
+
   $(".toggle-side-menu-classification").click(function () {
     $(".classification").toggleClass("show");
-    $(".overlay-sidemenu").toggleClass("show");
   });
   $(".close-side-menu-classification").click(function () {
     $(".classification").removeClass("show");
-    $(".overlay-sidemenu").removeClass("show");
   });
 
   const inputElements = [...document.querySelectorAll("input.code")];
@@ -152,7 +151,7 @@ window.addEventListener("scroll", function () {
           setTimeout(upTo, 300);
 
           if (count < target) {
-            counter.innerText = '+' + count + inc ;
+            counter.innerText = '+' + count + inc;
           } else counter.innerText = '+' + target;
         };
         upTo();
@@ -172,16 +171,76 @@ $(".fav").click(function () {
   $(this).find("i").toggleClass("fa-solid fa-regular");
 });
 
-$('.pass').click(function(){
-    $(this).toggleClass("bi-unlock bi-lock");
-    var pass = $(this).next()[0]
-    console.log(pass);
-    if (pass.type == "password") {
-      pass.setAttribute("type", "text");
-    } else {
+$('.pass').click(function () {
+  $(this).children('i').toggleClass("bi-unlock bi-lock");
+  var pass = $(this).closest('.input-group').find('input')[0];
+  console.log(pass);
+  if (pass.type == "password") {
+    pass.setAttribute("type", "text");
+  } else {
     pass.setAttribute("type", "password");
-}
+  }
 })
+
+
+// verification code OTP
+if ($('#verification-input').length > 0) {
+  const inputs = Array.from(document.getElementById("verification-input").children);
+  function getFirstEmptyIndex() {
+    return inputs.findIndex((input) => input.value === "");
+  }
+  inputs.forEach((input, i) => {
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Backspace") {
+        if (input.value === "" && i > 0) {
+          inputs[i - 1].value = "";
+          inputs[i - 1].focus();
+        }
+
+        for (let j = i; j < inputs.length; j++) {
+          let value = inputs[j + 1] ? inputs[j + 1].value : "";
+          inputs[j].setRangeText(value, 0, 1, "start");
+        }
+      }
+
+      if (e.key === "ArrowLeft" && i > 0) {
+        inputs[i - 1].focus();
+      }
+
+      if (e.key === "ArrowRight" && i < inputs.length - 1) {
+        inputs[i + 1].focus();
+      }
+    });
+
+    input.addEventListener("input", (e) => {
+      input.value = "";
+
+      const start = getFirstEmptyIndex();
+      inputs[start].value = e.data;
+
+      if (start + 1 < inputs.length) inputs[start + 1].focus();
+    });
+
+    input.addEventListener("paste", (e) => {
+      e.preventDefault();
+
+      const text = (event.clipboardData || window.clipboardData).getData("text");
+      const firstEmpty = getFirstEmptyIndex();
+      const start = firstEmpty !== -1 ? Math.min(i, firstEmpty) : i;
+
+      for (let i = 0; start + i < inputs.length && i < text.length; i++) {
+        inputs[start + i].value = text.charAt(i);
+      }
+
+      inputs[Math.min(start + text.length, inputs.length - 1)].focus();
+    });
+
+    input.addEventListener("focus", () => {
+      const start = getFirstEmptyIndex();
+      if (start !== -1 && i > start) inputs[start].focus();
+    });
+  });
+}
 
 // price slider
 
