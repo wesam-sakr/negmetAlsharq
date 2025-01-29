@@ -17,7 +17,7 @@
     />
 
     <!-- Bootstrap link  -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" id="bootstrap-style">
     <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
 
     <!-- owl-carousel link -->
@@ -70,7 +70,7 @@
               <li>
                 <a href="#" id="lang" aria-label="تغيير اللغة إلى الإنجليزية">
                   <i class="bi bi-globe"></i>
-                  <span>EN</span>
+                  <span id="lang-text">EN</span>
                 </a>
               </li>
             </ul>
@@ -201,11 +201,10 @@
             <div class="filter-header d-flex justify-content-between d-md-none">
               <p class="m-0 fw-bold fs-5">التصفيه</p>
               <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+                data-close=".filter"
+                class="close-filter">
+                <i class="bi bi-x-lg"></i>
+              </button>
             </div>
             <form action="">
               <div class="input-group my-3">
@@ -706,7 +705,7 @@
     </section>
 
     <!-- filter  btn -->
-    <button id="filter"><i class="bi bi-sliders fs-5"></i></button>
+    <button id="filter" data-toggle=".filter"><i class="bi bi-sliders fs-5"></i></button>
 
     <!-- footer section -->
     <footer>

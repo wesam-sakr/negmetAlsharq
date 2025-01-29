@@ -17,7 +17,7 @@
     />
 
     <!-- Bootstrap link  -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" id="bootstrap-style">
     <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
 
     <!-- owl-carousel link -->
@@ -70,7 +70,7 @@
               <li>
                 <a href="#" id="lang" aria-label="تغيير اللغة إلى الإنجليزية">
                   <i class="bi bi-globe"></i>
-                  <span>EN</span>
+                  <span id="lang-text">EN</span>
                 </a>
               </li>
             </ul>
@@ -195,14 +195,14 @@
 
     <!------------- profile -------------->
     <section class="profile py-5">
-      <div class="container">
+      <div class="container-fluid">
         <!-- profile nav-sm -->
         <div class="profile-nav-sm rounded-3">
           <p class="m-0">الملف الشخصي</p>
-          <button class="btn toggle-profile-nav p-0 border-0 bg-transparent">
+          <button class="btn toggle-profile-nav p-0 border-0 bg-transparent" data-toggle=".profile-nav">
             <img
             src="images/menu.png"
-            alt=""
+            alt="menu icon"
           />
           </button>
         </div>
@@ -210,9 +210,9 @@
         <div class="row d-flex justify-content-between align-items-start">
           <div class="profile-nav col col-md-5 col-lg-3" id="profile-nav">
 
-            <a href="javascript:void(0)" class="close-profile-nav">
+            <button class="close-profile-nav" data-close=".profile-nav">
               <i class="bi bi-x-lg"></i>
-            </a>
+            </button>
 
             <!-- profile title -->
             <div class="personal-title text-md-center fs-4">الملف الشخصي</div>
