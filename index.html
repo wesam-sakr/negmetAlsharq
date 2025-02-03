@@ -35,6 +35,10 @@
   </head>
 
   <body>
+    <!-- cursor -->
+    <div class="center"></div>
+    <div class="outerCircle"></div>
+
     <!-- go to up -->
     <div class="fixed-icon" id="scrollUp">
       <a href="#" aria-label="go to page up">
@@ -208,11 +212,11 @@
             </p>
             <div class="classification">
               <p class="d-md-none fw-bold fs-4">التصفية حسب</p>
-              <button
+              <!-- <button
                 data-close=".classification"
                 class="close-side-menu-classification">
                 <i class="bi bi-x-lg"></i>
-              </button>
+              </button> -->
               <form action="">
                 <div class="build-options">
                   <div class="form-group">
@@ -260,7 +264,7 @@
                   </div>
                 </div>
                 <div
-                  class="classification-content flex-md-row flex-column"
+                  class="classification-content"
                   action=""
                   method="#"
                   enctype="multipart"
@@ -297,7 +301,7 @@
                   </div>
                   <div class="col px-1">
                     <button type="button" class="btn main-btn w-100">
-                      <i class="bi bi-search me-1"></i>
+                      <i class="bi bi-search me-1 d-none d-md-inline"></i>
                       <span>بحث</span>
                     </button>
                   </div>
@@ -310,9 +314,9 @@
     </div>
 
     <!-- for responsive : toggle side menu classification -->
-    <button class="toggle-side-menu-classification" data-toggle=".classification">
+    <!-- <button class="toggle-side-menu-classification" data-toggle=".classification">
       <i class="bi bi-search"></i>
-    </button>
+    </button> -->
 
     <!-- about us -->
     <section class="about-us py-5">

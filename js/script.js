@@ -22,6 +22,37 @@ $(document).ready(function () {
     $('#bootstrap-style').attr('href', $('html').attr('lang') === 'en' ? 'css/bootstrap.min.css' : 'css/bootstrap.rtl.min.css');
   });
 
+  const circle = document.querySelector('.center');
+const Outer = document.querySelector('.outerCircle'); 
+
+document.addEventListener('mousemove',(e) => {
+  circle.style.top = `${e.clientY}px`;
+  circle.style.left = `${e.clientX}px`;
+  Outer.style.top = `${e.clientY}px`;
+  Outer.style.left = `${e.clientX}px`;
+});
+
+document.addEventListener('click',() => {
+  Outer.classList.add('click');
+  setTimeout(() => {
+    Outer.classList.remove('click');
+  },300)  
+});
+
+const Elements = [
+  "BUTTON",
+  "A",
+  "INPUT",
+  "SELECT"
+]
+document.addEventListener('mouseover',(e) => {
+   if(Elements.includes(e.target.tagName)){
+        Outer.classList.add('hover');
+   }else{
+     Outer.classList.remove('hover');
+   }
+});
+
   // Scroll to the top of the page
   window.addEventListener('scroll', () => {
     document.getElementById('scrollUp').style.display = window.scrollY > 300 ? 'block' : 'none';
