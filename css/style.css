@@ -154,7 +154,7 @@
   position: fixed;
   bottom: 110px;
   inset-inline-start: 30px;
-  z-index: 9;
+  z-index: 11;
 }
 
 .fixed-icon a i {
@@ -168,7 +168,6 @@
   border-radius: 50%;
   box-shadow: 0 2px 6px 0 rgb(0 0 0 / 30%);
   transition: .5s;
-  z-index: 8708;
   font-size: 20px;
   width: 54px;
   height: 54px
@@ -680,8 +679,7 @@ ul {
   position: absolute;
   inset-inline-end: 0;
   bottom: 0;
-  max-height: 100%;
-  /* width: auto; */
+  width: 70%;
 }
 
 [dir='ltr'] .heroSec .hero-image {
@@ -1562,8 +1560,8 @@ footer .sub-footer span {
   .hero-content {
     width: 60%;
   }
-  .hero-content p{
-    width: 60%;
+  .hero-content p {
+    width: 74%;
   }
  }
 @media (max-width: 991.8px) {
@@ -1603,21 +1601,20 @@ footer .sub-footer span {
     margin-block: 8px;
   }
 
-  /* hero section */
   .heroSec {
-    height: 75vh;
-    padding-block: 4rem 8rem;
+    padding-block: 4rem 0;
+  }
+  /* hero section */
+  .heroSec .hero-image {
+    width: 100%;
+    position: relative;
   }
   
-
   .hero-content {
     width: 78%;
+    margin-bottom: 2rem;
   }
 
-  .heroSec .hero-image {
-    width: 130%;
-    height: unset;
-  }
 
   /* profile */
   .profile .profile-data .my-aqars .card {
@@ -1680,7 +1677,7 @@ footer .sub-footer span {
 
   .heroSec {
     height: unset;
-    padding-block: 2rem 16rem;
+    /* padding-block: 2rem 16rem; */
   }
 
   .classification-content .btn {
