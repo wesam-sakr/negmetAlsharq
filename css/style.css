@@ -47,7 +47,6 @@
   -moz-transition: 0.35s linear;
   -ms-transition: 0.35s linear;
   -o-transition: 0.35s linear;
-  cursor: none;
 }
 
 .center, .outerCircle {
@@ -152,8 +151,8 @@
 
 .fixed-icon {
   position: fixed;
-  bottom: 110px;
-  inset-inline-start: 30px;
+  bottom: 30px;
+  inset-inline-end: 30px;
   z-index: 11;
 }
 
@@ -169,13 +168,11 @@
   box-shadow: 0 2px 6px 0 rgb(0 0 0 / 30%);
   transition: .5s;
   font-size: 20px;
-  width: 54px;
-  height: 54px
+  width: 48px;
+  height: 48px;
+  margin: 10px 0;
 }
 
-.fixed-icon.snapchat {
-  bottom: 40px
-}
 
 .snapchat i::after {
   content: '';
@@ -190,11 +187,18 @@
   z-index: 2;
 }
 
-.fixed-icon.snapchat a i {
+.fixed-icon a.snapchat i {
   background: #FFFC00;
   color: #000;
 }
-
+.fixed-icon a.whatsapp i {
+  background: #25d366;
+  color: #fff;
+}
+.fixed-icon a.tiktok i {
+  background: #000;
+  color: #fff;
+}
 .snapchat i::after {
   -webkit-animation: 1s infinite ripple-out;
   animation: 1s infinite ripple-out;
@@ -520,9 +524,10 @@ ul {
 }
 
 /* Carousel */
-.container-fluid:has(.owl-carousel) {
+.container-fluid:has(.owl-carousel):not(:has(.slider .owl-carousel)) {
   padding-inline-end: 0 !important;
 }
+
 
 .owl-carousel .owl-stage {
   display: flex;
@@ -1048,51 +1053,267 @@ html[lang='en'] .our-estates .badge {
   vertical-align: top;
 }
 
-.estates .gallery .gallery-container {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-  gap: 0.85rem;
-  direction: ltr;
-  
-}
-[dir="ltr"] .estates .gallery .gallery-container { 
-  direction: rtl;
+.all {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
 }
 
-.estates .gallery .gallery-container .img {
-  border-radius: 2rem;
-  grid-column: span 3;
-  grid-row: span 1;
+.all .slider {
+  width: auto;
+  height: auto;
   overflow: hidden;
-  border-radius: calc(var(--card-raduis)  * .65);
-  -webkit-border-radius: calc(var(--card-raduis)  * .65);
-  -moz-border-radius: calc(var(--card-raduis)  * .65);
-  -ms-border-radius: calc(var(--card-raduis)  * .65);
-  -o-border-radius: calc(var(--card-raduis)  * .65);
+  border-radius: 3px;
+  border-radius: 10px;
+  position: relative;
 }
 
-.estates .gallery .gallery-container .img:nth-child(-n + 5) {
-  grid-column: span 3;
+.all .slider .owl-dots {
+  display: none;
 }
 
-.estates .gallery .gallery-container .img img {
-  -o-object-fit: cover;
-  object-fit: cover;
-  aspect-ratio: 3 / 2;
+.all .slider .owl-nav {
+  top: 45%;
+  width: 94%;
+  left: 3%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.all .owl-carousel .owl-nav button.owl-next,
+.all .owl-carousel .owl-nav button.owl-prev {
+  font: inherit;
+  width: 40px;
+  height: 40px;
+  line-height: 5px;
+  border: 1px solid var(--main);
+  border-radius: 50%;
+  font-size: 25px;
+  color: var(--white);
+  background: var(--main);
+  transition: all 0.3s;
+}
+
+.owl-carousel .owl-nav button:hover {
+  border: 1px solid var(--secondry) !important;
+  color: #fff !important;
+  background-color: var(--secondry) !important;
+}
+
+.all .slider:hover .left {
+  visibility: visible;
+  opacity: 1;
+  left: 20px;
+}
+
+.all .slider:hover .right {
+  visibility: visible;
+  opacity: 1;
+  right: 20px;
+}
+
+.all .slider .item-box {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.all .slider .item-box:after {
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  display: block;
 }
 
-.estates .gallery .gallery-container .img:nth-child(1) {
-  grid-row: span 3;
-  grid-column: span 9;
-  max-height: unset;
-  border-radius: var(--card-raduis);
-  -webkit-border-radius: var(--card-raduis);
-  -moz-border-radius: var(--card-raduis);
-  -ms-border-radius: var(--card-raduis);
-  -o-border-radius: var(--card-raduis);
+.all .slider .left {
+  position: absolute;
+  z-index: 1;
+  top: 167px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: left ease 0.25s;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background: url(http://svgshare.com/i/2V9.svg) top left;
+}
+
+.all .slider .left:hover {
+  visibility: visible;
+  opacity: 1;
+  left: 20px;
+  background: url(http://svgshare.com/i/2UW.svg) top left;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.all .slider .left.nonl {
+  left: -20px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.all .slider .right {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 167px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: right ease 0.25s;
+  background: url(http://svgshare.com/i/2V9.svg) top left;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.all .slider .right:hover {
+  visibility: visible;
+  opacity: 1;
+  right: 20px;
+  background: url(http://svgshare.com/i/2UW.svg) top left;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.all .slider .right.nonr {
+  right: -20px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.all .slider-two {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 1;
+}
+
+.all .slider-two .owl-nav,
+.all .slider-two .owl-dots {
+  display: none;
+}
+
+.all .slider-two:hover .left-t {
+  visibility: visible;
+  opacity: 1;
+  right: calc(100% - 60px);
+}
+
+.all .slider-two:hover .right-t {
+  visibility: visible;
+  opacity: 1;
+  right: 20px;
+}
+
+.all .slider-two .item {
+  transition: all ease 0.25s;
+  border-radius: calc(var(--card-raduis) * .5);
+  overflow: hidden;
+  border: solid 2px transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: calc(var(--card-raduis) * .5);
+  -moz-border-radius: calc(var(--card-raduis) * .5);
+  -ms-border-radius: calc(var(--card-raduis) * .5);
+  -o-border-radius: calc(var(--card-raduis) * .5);
+}
+
+.all .slider-two .item.active {
+  border: solid 1px var(--secondry);
+  padding: 0.5rem;
+}
+
+.all .slider-two .owl-stage {
+  padding: 15px 0 30px;
+}
+
+.all .slider-two .left-t:hover {
+  background-color: var(--secondry);
+}
+.all .slider-two .left-t{
+  right: calc(100% + 40px);
+}
+.all .slider-two .left-t.nonl-t {
+  right: calc(100% - 60px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.all .slider-two .right-t,
+.all .slider-two .left-t {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 50px;
+  right: -40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.25s;
+  width: 35px;
+  height: 35px;
+  background-color: #2b2b2b;
+  border-radius: 100%;
+  line-height: 35px;
+  color: #fff;
+  line-height: 0;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.all .slider-two .right-t:hover {
+  background-color: var(--secondry);
+}
+
+.all .slider-two .right-t.nonr-t {
+  right: -40px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.all .slider .item-box img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 12 / 7;
+  object-fit: cover;
+}
+
+.all .slider-two .item img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 5 / 4;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.all .slider-two .right-t i,
+.all .slider-two .left-t i {
+  font-size: 20px;
+  text-align: center;
+  vertical-align: sub;
 }
 
 .estates .share-estate .social i {
@@ -1563,7 +1784,8 @@ footer .sub-footer span {
   .hero-content p {
     width: 74%;
   }
- }
+}
+
 @media (max-width: 991.8px) {
   :root {
     --gutter-x: 4rem;
@@ -1629,7 +1851,7 @@ footer .sub-footer span {
     height: 200px;
   }
 
-  .profile .profile-data .my-aqars .card .card-body p.secondry-color+div {
+  .profile .profile-data .my-aqars .card .card-body p.secondry+div {
     padding: 1rem 0rem;
   }
 
@@ -1647,8 +1869,10 @@ footer .sub-footer span {
     width: 100%;
     height: 180px;
   }
+  .center, .outerCircle{
+    display: none;
+  }
 }
-
 
 @media (max-width: 991.8px) and (min-width: 767.8px) {
   footer .footer-images{
@@ -1663,8 +1887,7 @@ footer .sub-footer span {
   .footer-links .img-fluid {
     margin: unset;
   }
- }
-
+}
 
 @media (max-width: 576px) {
   :root {

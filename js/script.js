@@ -13,45 +13,45 @@ if (bodyDir == "rtl") {
   dirAr = false;
 }
 $(document).ready(function () {
-  
-  $('#lang').on('click', function() {
+
+  $('#lang').on('click', function () {
     $('html').attr('dir', $('html').attr('dir') === 'ltr' ? 'rtl' : 'ltr');
     $('html').attr('lang', $('html').attr('lang') === 'en' ? 'ar' : 'en');
-    $('#lang-text').text($('html').attr('lang') === 'en' ? 'AR' : 'EN' );
+    $('#lang-text').text($('html').attr('lang') === 'en' ? 'AR' : 'EN');
     $('.owl-carousel').toggleClass('owl-rtl');
     $('#bootstrap-style').attr('href', $('html').attr('lang') === 'en' ? 'css/bootstrap.min.css' : 'css/bootstrap.rtl.min.css');
   });
 
   const circle = document.querySelector('.center');
-const Outer = document.querySelector('.outerCircle'); 
+  const Outer = document.querySelector('.outerCircle');
 
-document.addEventListener('mousemove',(e) => {
-  circle.style.top = `${e.clientY}px`;
-  circle.style.left = `${e.clientX}px`;
-  Outer.style.top = `${e.clientY}px`;
-  Outer.style.left = `${e.clientX}px`;
-});
+  document.addEventListener('mousemove', (e) => {
+    circle.style.top = `${e.clientY}px`;
+    circle.style.left = `${e.clientX}px`;
+    Outer.style.top = `${e.clientY}px`;
+    Outer.style.left = `${e.clientX}px`;
+  });
 
-document.addEventListener('click',() => {
-  Outer.classList.add('click');
-  setTimeout(() => {
-    Outer.classList.remove('click');
-  },300)  
-});
+  document.addEventListener('click', () => {
+    Outer.classList.add('click');
+    setTimeout(() => {
+      Outer.classList.remove('click');
+    }, 300)
+  });
 
-const Elements = [
-  "BUTTON",
-  "A",
-  "INPUT",
-  "SELECT"
-]
-document.addEventListener('mouseover',(e) => {
-   if(Elements.includes(e.target.tagName)){
-        Outer.classList.add('hover');
-   }else{
-     Outer.classList.remove('hover');
-   }
-});
+  const Elements = [
+    "BUTTON",
+    "A",
+    "INPUT",
+    "SELECT"
+  ]
+  document.addEventListener('mouseover', (e) => {
+    if (Elements.includes(e.target.tagName)) {
+      Outer.classList.add('hover');
+    } else {
+      Outer.classList.remove('hover');
+    }
+  });
 
   // Scroll to the top of the page
   window.addEventListener('scroll', () => {
@@ -118,32 +118,6 @@ document.addEventListener('mouseover',(e) => {
     let target = $(this).data("close");
     $(target).removeClass("show");
   });
-
-
-
-  // side filter in responseve  
-  // $("#filter").click(function () {
-  //   $(".filter").toggleClass("show");
-  // });
-  // $(".filter-header .btn-close").click(function () {
-  //   $(".filter").toggleClass("show");
-  // });
-
-  // side profile nav in responseve  
-  // $(".toggle-profile-nav").click(function () {
-  //   $(".profile-nav").toggleClass("show");
-  // });
-  // $(".close-profile-nav").click(function () {
-  //   $(".profile-nav").removeClass("show");
-  // });
-
-  // side classification in responseve  
-  // $(".toggle-side-menu-classification").click(function () {
-  //   $(".classification").toggleClass("show");
-  // });
-  // $(".close-side-menu-classification").click(function () {
-  //   $(".classification").removeClass("show");
-  // });
 
   // verification code OTP
   if ($('#verification-input').length > 0) {
@@ -236,6 +210,94 @@ document.addEventListener('mouseover',(e) => {
       }
     });
   }
+
+  var changeSlide = 4; // mobile -1, desktop + 1
+  // Resize and refresh page. slider-two slideBy bug remove
+  var slide = changeSlide;
+  if ($(window).width() < 600) {
+    var slide = changeSlide;
+    slide--;
+  } else if ($(window).width() > 999) {
+    var slide = changeSlide;
+    slide++;
+  } else {
+    var slide = changeSlide;
+  }
+
+  $(".one").owlCarousel({
+    nav: false,
+    items: 1,
+    margin: 5,
+    autoplay: 5000,
+    rtl: dirAr,
+  });
+  $(".two").owlCarousel({
+    nav: false,
+    margin: 5,
+    rtl: dirAr,
+    responsive: {
+      0: {
+        items: changeSlide - 1,
+        slideBy: changeSlide - 1,
+      },
+      600: {
+        items: changeSlide,
+        slideBy: changeSlide,
+      },
+      1000: {
+        items: changeSlide + 1,
+        slideBy: changeSlide + 1,
+      },
+    },
+  });
+  var owl = $(".one");
+  owl.owlCarousel();
+  owl.on("translated.owl.carousel", function (event) {
+    $(".right").removeClass("nonr");
+    $(".left").removeClass("nonl");
+    if ($(".one .owl-next").is(".disabled")) {
+      $(".slider .right").addClass("nonr");
+    }
+    if ($(".one .owl-prev").is(".disabled")) {
+      $(".slider .left").addClass("nonl");
+    }
+    $(".slider-two .item").removeClass("active");
+    var c = $(".slider .owl-item.active").index();
+    $(".slider-two .item").eq(c).addClass("active");
+    var d = Math.ceil((c + 1) / slide) - 1;
+    $(".slider-two .owl-dots .owl-dot").eq(d).trigger("click");
+  });
+  $(".right").click(function () {
+    $(".slider .owl-next").trigger("click");
+  });
+  $(".left").click(function () {
+    $(".slider .owl-prev").trigger("click");
+  });
+  $(".slider-two .item").click(function () {
+    var b = $(".item").index(this);
+    $(".slider .owl-dots .owl-dot").eq(b).trigger("click");
+    $(".slider-two .item").removeClass("active");
+    $(this).addClass("active");
+  });
+  var owl2 = $(".two");
+  owl2.owlCarousel();
+  owl2.on("translated.owl.carousel", function (event) {
+    $(".right-t").removeClass("nonr-t");
+    $(".left-t").removeClass("nonl-t");
+    if ($(".two .owl-next").is(".disabled")) {
+      $(".slider-two .right-t").addClass("nonr-t");
+    }
+    if ($(".two .owl-prev").is(".disabled")) {
+      $(".slider-two .left-t").addClass("nonl-t");
+    }
+  });
+  $(".right-t").click(function () {
+    $(".slider-two .owl-prev").trigger("click");
+  });
+  $(".left-t").click(function () {
+    $(".slider-two .owl-next").trigger("click");
+  });
+
 
   // carousels
   $(".owl-carousel").owlCarousel({
